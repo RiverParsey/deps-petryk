@@ -1,7 +1,7 @@
 # Personal project «Deps»
 
-* Student: [Richard Petrik](https://github.com/RiverParsey).
 * Mentor: [Yevhenii Pipa](https://github.com/Pipuss).
+* Student: [Richard Petrik](https://github.com/RiverParsey).
 ---
 
 _Do not remove and do not make changes to files:_<br>
