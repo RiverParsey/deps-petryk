@@ -1,12 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Hello World</h1>
+
+<body class="page__body">
+  <div class="page__wrapper">
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <a href="index.html" class="page-header__logo">
+          <img src="#" alt="Логотип" class="page-header__image" width="94" height="34">
+        </a>
+        <button class="button main-nav__price">Узнать цену</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">
+                Оборудование
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">
+                Реализованные объекты
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="main-nav__contact-info contact-info">
+            <div class="contact-info__email">
+              <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__icon-link">
+                <img src="#" alt="" class="contact-info__icon" width="54" height="54">
+              </a><br>
+              <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__link">Yevgen.Mikhaylov@deps.ua</a>
+            </div>
+            <div class="contact-info__phone">
+              <a href="tel:+380676184407" class="contact-info__icon-link">
+                <img src="#" alt="" class="contact-info__icon" width="54" height="54">
+              </a><br>
+              <a href="tel:+380676184407" class="contact-info__link">+380 67 618 44 07</a>
+            </div>
+            <button class="button contact-info__consultation-button">Получить консультацию</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="banner">
+        <h2 class="banner__title">Парковочные решения</h2>
+        <p class="banner__subtitle">для жилых комплексов</p>
+        <ul class="banner__list">
+          <li class="banner__item">
+            <img src="#" alt="" class="banner__icon" width="40" height="40">
+            <p class="banner__description">Контроль проезда автомобилей</p>
+          </li>
+          <li class="banner__item">
+            <img src="#" alt="" class="banner__icon" width="40" height="40">
+            <p class="banner__description">Безопасность на территории</p>
+          </li>
+          <li class="banner__item">
+            <img src="#" alt="" class="banner__icon" width="40" height="40">
+            <p class="banner__description">Полная автоматизация проезда</p>
+          </li>
+        </ul>
+        <button class="button banner__consultation-button">Получить консультацию</button>
+        <img src="#" alt="" class="banner__image" width="328" height="267">
+      </section>
+
+      <section class="questions">
+        <span class="breadcrumb">Если</span>
+        <p class="breadcrumb__text">Вы ищете решение:</p>
+        <div class="questions__comments-field comments-field">
+          <div class="comments-field__user-field user-field">
+            <div class="user-field__user-message">
+              <p class="user-field__message-text">Занята парковка автомобилями с соседних дворов</p>
+            </div>
+            <div class="user-field__user-picture">
+              <img src="#" alt="" class="user-field__img" widht="40" height="40">
+            </div>
+          </div>
+          <div class="comments-field__user-field user-field">
+            <div class="user-field__user-message">
+              <p class="user-field__message-text">Неопознанные авто на парковке</p>
+            </div>
+            <div class="user-field__user-picture">
+              <img src="#" alt="" class="user-field__img" widht="40" height="40">
+            </div>
+          </div>
+          <div class="comments-field__user-field user-field">
+            <div class="user-field__user-message">
+              <p class="user-field__message-text">Какое парковочное решение будет оптимальным для вас</p>
+            </div>
+            <div class="user-field__user-picture">
+              <img src="#" alt="" class="user-field__img" widht="40" height="40">
+            </div>
+          </div>
+          <div class="comments-field__user-field user-field">
+            <div class="user-field__user-message">
+              <p class="user-field__message-text">Где найти компетентного и надежного подрядчика</p>
+            </div>
+            <div class="user-field__user-picture">
+              <img src="#" alt="" class="user-field__img" widht="40" height="40">
+            </div>
+          </div>
+          <img src="#" alt="" class="questions__image" width="328" height="436">
+        </div>
+      </section>
+
+      <section class="benefits">
+        <span class="breadcrumb">Вот почему</span>
+        <p class="breadcrumb__text">Выбирают нас</p>
+
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <img src="#" alt="" class="benefits__icon" width="40" height="40">
+            <h3 class="benefits__title">Индивидуально</h3>
+            <p class="benefits__subtitle">Широкий выбор решений под ваши необходимости</p>
+          </li>
+          <li class="benefits__item">
+            <img src="#" alt="" class="benefits__icon" width="40" height="40">
+            <h3 class="benefits__title">Удобно</h3>
+            <p class="benefits__subtitle">Реализация проекта под ключ</p>
+          </li>
+          <li class="benefits__item">
+            <img src="#" alt="" class="benefits__icon" width="40" height="40">
+            <h3 class="benefits__title">Профессионально</h3>
+            <p class="benefits__subtitle">Выбор, установка, настройка и запуск парковки в вашем ЖК нашими опытными
+              инженерами</p>
+          </li>
+          <li class="benefits__item">
+            <img src="#" alt="" class="benefits__icon" width="40" height="40">
+            <h3 class="benefits__title">Надежно</h3>
+            <p class="benefits__subtitle">Гарантия на парковочную систему - 12 месяцев</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="solutions">
+        <span class="breadcrumb">Надежные</span>
+        <p class="breadcrumb__text">Готовые решения</p>
+        <div class="solutions__product-cards cards">
+          <div class="cards__product-card product-card">
+            <img src="#" alt="" class="product-card__pic" width="264" height="240">
+            <h3 class="product-card__title">Комплект Базовый</h3>
+            <p class="product-card__description">Проезд на территорию осуществляется при помощи телефонного звонка (GSM)
+            </p>
+            <ul class="product-card__list">
+              <li class="product-card__item">Шлагбаум</li>
+              <li class="product-card__item">Радар для обнаружения авто</li>
+              <li class="product-card__item">Контроллер индукционной (магнитной)</li>
+              <li class="product-card__item">Монтажный комплект</li>
+              <li class="product-card__item">Gsm-контроллер</li>
+            </ul>
+            <div class="product-card__price card-price">
+              <div class="card-price__title">
+                <p class="card-price__older">от 1500$<span class="card-price__current">от 800$</span></p>
+                <p class="card-price__description">*без учета стоимости работы</p>
+              </div>
+              <div class="card-price__order price-button">
+                <a href="#" class="button price-button__order-button">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards__product-card product-card">
+            <img src="#" alt="" class="product-card__pic" width="264" height="240">
+            <h3 class="product-card__title">Комплект Стандарт</h3>
+            <p class="product-card__description">Проезд на территорию осуществляется при распознании автомобильного
+              номера в системе свой/чужой (LPR)</p>
+            <ul class="product-card__list">
+              <li class="product-card__item">Шлагбаум</li>
+              <li class="product-card__item">Радар для обнаружения авто</li>
+              <li class="product-card__item">Контроллер индукционной (магнитной)</li>
+              <li class="product-card__item">Монтажный комплект</li>
+              <li class="product-card__item">IP-камера</li>
+              <li class="product-card__item">Poe watchdog коммутатор</li>
+            </ul>
+            <div class="product-card__price card-price">
+              <div class="card-price__title">
+                <p class="card-price__older">от 2100$<span class="card-price__current">от 1400$</span></p>
+                <p class="card-price__description">*без учета стоимости работы</p>
+              </div>
+              <div class="card-price__order price-button">
+                <a href="#" class="button price-button__order-button">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards__product-card product-card">
+            <img src="#" alt="" class="product-card__pic" width="264" height="240">
+            <h3 class="product-card__title">Комплект Продвинутый</h3>
+            <p class="product-card__description">Проезд на территорию осуществляется при считывании специальной метки
+              расположенной на автомобиле (UHF)</p>
+            <ul class="product-card__list">
+              <li class="product-card__item">Шлагбаум</li>
+              <li class="product-card__item">Радар для обнаружения авто</li>
+              <li class="product-card__item">Контроллер индукционной (магнитной)</li>
+              <li class="product-card__item">Монтажный комплект</li>
+              <li class="product-card__item">UHF-считыватель уличный</li>
+              <li class="product-card__item">Считыватель настольный UHF</li>
+              <li class="product-card__item">Бессконтактные UHF метки</li>
+            </ul>
+            <div class="product-card__price card-price">
+              <div class="card-price__title">
+                <p class="card-price__older">от 2400$<span class="card-price__current">от 1600$</span></p>
+                <p class="card-price__description">*без учета стоимости работы</p>
+              </div>
+              <div class="card-price__order price-button">
+                <a href="#" class="button price-button__order-button">Купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-steps">
+        <span class="breadcrumb">Как мы работаем</span>
+        <p class="breadcrumb__text">Этапы работ</p>
+        <div class="work-steps__wrap ">
+          <ul class="work-steps__list work-list">
+            <li class="work-list__item">
+              <img src="#" alt="" class="work-list__icon" width="100" height="100">
+              <p class="work-list__title">
+                Оставляете запрос
+              </p>
+              <p class="work-list__description">
+                Это бесплатно
+              </p>
+            </li>
+            <li class="work-list__item">
+              <img src="#" alt="" class="work-list__icon" width="100" height="100">
+              <p class="work-list__title">
+                Консультация с нашим специалистом
+              </p>
+              <p class="work-list__description">
+                Это тоже абсолютно бесплатно
+              </p>
+            </li>
+            <li class="work-list__item">
+              <img src="#" alt="" class="work-list__icon" width="100" height="100">
+              <p class="work-list__title">
+                Монтаж оборудования
+              </p>
+              <p class="work-list__description">
+                Зависит от стоимости расчета
+              </p>
+            </li>
+            <li class="work-list__item">
+              <img src="#" alt="" class="work-list__icon" width="100" height="100">
+              <p class="work-list__title">
+                Комфортное использование
+              </p>
+              <p class="work-list__description">
+                Выше вложенных средств
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="equipment">
+        <span class="breadcrumb">Лучшее</span>
+        <p class="breadcrumb__text">Оборудование</p>
+        <div class="equipment__cards">
+          <div class="equipment__item">
+            <div class="equipment__picture">
+              <img src="#" alt="" class="equipment__image" width="120" height="120">
+            </div>
+            <div class="equipment__description">
+              <p class="equipment__title">BG1060</p>
+              <p class="equipment__subtitle">
+                современный шлагбаум с интерактивной световой индикацией, высокоэффективный бесщеточный двигатель
+                постоянного тока с ресурсом открытий не менее 3 000 000 циклов
+              </p>
+            </div>
+          </div>
+          <div class="equipment__item">
+            <div class="equipment__picture">
+              <img src="#" alt="" class="equipment__image" width="120" height="120">
+            </div>
+            <div class="equipment__description">
+              <p class="equipment__title">GSM-контроллер RC-4000</p>
+              <p class="equipment__subtitle">
+                служит сердцем системы и позволяет осуществить заезд на территорию по нескольким сценариям
+              </p>
+            </div>
+          </div>
+          <div class="equipment__item">
+            <div class="equipment__picture">
+              <img src="#" alt="" class="equipment__image" width="120" height="120">
+            </div>
+            <div class="equipment__description">
+              <p class="equipment__title">VR10</p>
+              <p class="equipment__subtitle">
+                радар для обнаружения транспортных средств, который обезопасит проезд транспорта под стрелой.
+              </p>
+            </div>
+          </div>
+          <div class="equipment__item">
+            <div class="equipment__picture">
+              <img src="#" alt="" class="equipment__image" width="120" height="120">
+            </div>
+            <div class="equipment__description">
+              <p class="equipment__title">PSA02 + PSA03</p>
+              <p class="equipment__subtitle">
+                петлевой детектор, служит для выезда любого транспорта из охраняемой территории
+              </p>
+            </div>
+          </div>
+          <div class="equipment__show-more show-more">
+            <a href="#" class="show-more__link">Показать еще</a>
+          </div>
+          <div class="equipment__button">
+            <a href="#" class="equipment__price-button button">Расчитать стоимость</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="realized-objects">
+        <span class="breadcrumb">Наши</span>
+        <p class="breadcrumb__text">Реализованные объекты</p>
+        <div class="realized-objects__body objects">
+          <div class="objects__picture">
+            <img src="#" alt="" class="objects__image" width="272" height="272">
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
+          <div class="objects__picture">
+            <img src="#" alt="" class="objects__image" width="272" height="272">
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
+          <div class="objects__picture">
+            <img src="#" alt="" class="objects__image" width="272" height="272">
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
+          <div class="objects__picture">
+            <img src="#" alt="" class="objects__image" width="272" height="272">
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
+          <div class="objects__picture">
+            <img src="#" alt="" class="objects__image" width="272" height="272">
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
+          <p class="objects__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social footer-social">
+        <div class="footer-social__email">
+          <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="footer-social__icon-link">
+            <img src="#" alt="" class="footer-social__icon" width="54" height="54">
+          </a><br>
+          <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="footer-social__link">Yevgen.Mikhaylov@deps.ua</a>
+        </div>
+        <div class="footer-social__adress">
+          <a href="#" class="footer-social__icon-link">
+            <img src="#" alt="" class="footer-social__icon" width="54" height="54">
+          </a><br>
+          <a href="#" class="footer-social__link">ул. Маричанская, 18, г. Киев, 03040, Украина</a>
+        </div>
+        <div class="footer-social__phone">
+          <a href="tel:+380676184407" class="footer-social__icon-link">
+            <img src="#" alt="" class="footer-social__icon" width="54" height="54">
+          </a><br>
+          <a href="tel:+380676184407" class="footer-social__link">+380 67 618 44 07</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright footer-copyright">
+        <p class="footer-copyright__text">
+          © 2022 DEPS. Все права защищены. Использование материалов с сайта — только с разрешения администрации.<br>
+          Цены указаны с учетом НДС. Сумма в долларах США является ориентировочной и не является ценой товара. Оплата осуществляется в грн по курсу на день оплаты.
+        </p>
+      </div>
+    </footer>
+
+  </div>
 </body>
+
 </html>
