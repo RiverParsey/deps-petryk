@@ -1,0 +1,29 @@
+//Benefits styles
+
+.benefits {
+  padding: 10px 1em 0 1em;
+}
+
+.benefits__list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.benefits__item {
+  width: min-content;
+  height: auto;
+}
+
+.benefits__icon {
+  background-color: var(--basic_img-background);
+}
+
+.benefits__item-title {
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.benefits__subtitle {
+  font-size: 13px;
+}

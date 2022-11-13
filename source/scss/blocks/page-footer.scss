@@ -1,0 +1,40 @@
+//Page-footer styles
+
+.page-footer {
+  padding: 60px 1em 20px 1em;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.footer-social__email,
+.footer-social__adress,
+.footer-social__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social__icon {
+  background-color: var(--basic_img-background);
+  border-radius: 50%;
+}
+
+.footer-social__link {
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--basic_text-color);
+}
+
+.footer-copyright {
+  padding-top: 60px;
+}
+
+.footer-copyright__text {
+  font-size: 13px;
+  color: var(--basic_text-transparent);
+}

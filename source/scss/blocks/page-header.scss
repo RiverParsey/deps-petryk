@@ -1,0 +1,80 @@
+//Page-header styles
+
+.page-header {
+  box-shadow: 0px 15px 30px -10px rgba(119, 122, 144, 0.15);
+}
+
+.main-nav__header-wrap {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__toggle {
+  margin: 15px 16px;
+}
+
+.page-header__logo {
+  margin-right: 83px;
+}
+
+.page-header__image {
+  width: 94px;
+  height: 34px;
+}
+
+.main-nav__price {
+  padding: 10px 16px;
+}
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.site-list__link {
+  color: var(--basic_text-color);
+}
+
+.site-list__link:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.contact-info {
+  background-color: var(--basic_white);
+  background: linear-gradient(180deg, #F5F6FA 0%, #FFFFFF 100%);
+}
+
+.contact-info__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info__email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 20px 0;
+}
+
+.contact-info__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.contact-info__link {
+  color: var(--basic_text-color);
+}
+
+.contact-info__icon {
+  background-color: var(--basic_img-background);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}

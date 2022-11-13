@@ -11,14 +11,16 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <h1 class="page__heading">Deps</h1>
+    <h1 class="visually-hidden">Deps</h1>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <a href="index.html" class="page-header__logo">
-          <img src="#" alt="Логотип" class="page-header__image" width="94" height="34">
-        </a>
-        <button class="button main-nav__price">Узнать цену</button>
+        <div class="main-nav__header-wrap">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <a href="index.html" class="page-header__logo">
+            <img src="img/deps_logo-pic.png" alt="Логотип" class="page-header__image" width="94" height="34">
+          </a>
+          <button class="button main-nav__price">Узнать цену</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -43,19 +45,21 @@
             </li>
           </ul>
           <div class="main-nav__contact-info contact-info">
-            <div class="contact-info__email">
-              <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__icon-link">
-                <img src="#" alt="" class="contact-info__icon" width="54" height="54">
-              </a><br>
-              <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__link">Yevgen.Mikhaylov@deps.ua</a>
+            <div class="contact-info__wrap">
+              <div class="contact-info__email">
+                <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__icon-link">
+                  <img src="#" alt="" class="contact-info__icon" width="54" height="54">
+                </a><br>
+                <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__link">Yevgen.Mikhaylov@deps.ua</a>
+              </div>
+              <div class="contact-info__phone">
+                <a href="tel:+380676184407" class="contact-info__icon-link">
+                  <img src="#" alt="" class="contact-info__icon" width="54" height="54">
+                </a><br>
+                <a href="tel:+380676184407" class="contact-info__link">+380 67 618 44 07</a>
+              </div>
+              <button class="button contact-info__consultation-button">Получить консультацию</button>
             </div>
-            <div class="contact-info__phone">
-              <a href="tel:+380676184407" class="contact-info__icon-link">
-                <img src="#" alt="" class="contact-info__icon" width="54" height="54">
-              </a><br>
-              <a href="tel:+380676184407" class="contact-info__link">+380 67 618 44 07</a>
-            </div>
-            <button class="button contact-info__consultation-button">Получить консультацию</button>
           </div>
         </div>
       </nav>
@@ -91,7 +95,7 @@
         <ul class="questions__comments-field comments-field">
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
+              <span class="user-field__help">?</span>
               <p class="user-field__message-text">Занята парковка автомобилями с соседних дворов</p>
             </div>
             <div class="user-field__user-picture">
@@ -100,7 +104,7 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
+              <span class="user-field__help">?</span>
               <p class="user-field__message-text">Неопознанные авто на парковке</p>
             </div>
             <div class="user-field__user-picture">
@@ -109,7 +113,7 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
+              <span class="user-field__help">?</span>
               <p class="user-field__message-text">Какое парковочное решение будет оптимальным для вас</p>
             </div>
             <div class="user-field__user-picture">
@@ -118,7 +122,7 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
+              <span class="user-field__help">?</span>
               <p class="user-field__message-text">Где найти компетентного и надежного подрядчика</p>
             </div>
             <div class="user-field__user-picture">
@@ -127,7 +131,7 @@
           </li>
           <li class="questions__description">
             <img src="#" alt="" class="questions__image" width="328" height="436">
-            <span class="urer-field__help">?</span>
+            <span class="uspaner-field__help">?</span>
             <p class="questions__text">
               Большинство (78,5%) представителей жилых комплексов не знают, какое парковочное решение оптимально
               подойдет для их ЖК. И это нормально, так как на рынке большой выбор парковочных решений, которые могут
@@ -185,13 +189,11 @@
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">Gsm-контроллер</li>
+              <li class="product-card__item product-card__item--bolder">Gsm-контроллер</li>
             </ul>
             <div class="product-card__price card-price">
-              <div class="card-price__title">
-                <p class="card-price__older">от 1500$<span class="card-price__current">от 800$</span></p>
-                <p class="card-price__description">*без учета стоимости работы</p>
-              </div>
+              <span class="card-price__older">от 1500$</span><span class="card-price__current">от 800$</span>
+              <p class="card-price__description">*без учета стоимости работы</p>
               <div class="card-price__order price-button">
                 <a href="#" class="button price-button__order-button">Купить</a>
               </div>
@@ -210,14 +212,12 @@
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">IP-камера</li>
-              <li class="product-card__item">Poe watchdog коммутатор</li>
+              <li class="product-card__item product-card__item--bolder">IP-камера</li>
+              <li class="product-card__item product-card__item--bolder">Poe watchdog коммутатор</li>
             </ul>
             <div class="product-card__price card-price">
-              <div class="card-price__title">
-                <p class="card-price__older">от 2100$<span class="card-price__current">от 1400$</span></p>
-                <p class="card-price__description">*без учета стоимости работы</p>
-              </div>
+              <span class="card-price__older">от 2100$</span><span class="card-price__current">от 1400$</span>
+              <p class="card-price__description">*без учета стоимости работы</p>
               <div class="card-price__order price-button">
                 <a href="#" class="button price-button__order-button">Купить</a>
               </div>
@@ -236,15 +236,13 @@
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">UHF-считыватель уличный</li>
-              <li class="product-card__item">Считыватель настольный UHF</li>
-              <li class="product-card__item">Бессконтактные UHF метки</li>
+              <li class="product-card__item product-card__item--bolder">UHF-считыватель уличный</li>
+              <li class="product-card__item product-card__item--bolder">Считыватель настольный UHF</li>
+              <li class="product-card__item product-card__item--bolder">Бессконтактные UHF метки</li>
             </ul>
             <div class="product-card__price card-price">
-              <div class="card-price__title">
-                <p class="card-price__older">от 2400$<span class="card-price__current">от 1600$</span></p>
-                <p class="card-price__description">*без учета стоимости работы</p>
-              </div>
+              <span class="card-price__older">от 2400$</span><span class="card-price__current">от 1600$</span>
+              <p class="card-price__description">*без учета стоимости работы</p>
               <div class="card-price__order price-button">
                 <a href="#" class="button price-button__order-button">Купить</a>
               </div>

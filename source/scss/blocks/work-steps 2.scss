@@ -1,0 +1,28 @@
+//Work-steps styles
+
+.work-steps {
+  padding: 2em 1em 0 1em;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.work-list__item {
+  width: 45%;
+  height: auto;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.work-list__icon {
+  background-color: var(--basic_img-background);
+  border-radius: 50%;
+}
+
+.work-list__description {
+  font-size: 13px;
+  color: var(--basic_text-transparent);
+}
