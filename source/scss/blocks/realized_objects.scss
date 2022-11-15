@@ -1,0 +1,20 @@
+//Realized-objects style
+
+.realized-objects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(180deg,#fff 0,#f5f6fa 100%);
+}
+
+.objects__image {
+  display: block;
+  margin-right: auto;
+  background-color: var(--basic_img-background);
+}
+
+.objects__toggles {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}

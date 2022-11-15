@@ -11,14 +11,16 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <h1 class="page__heading">Deps</h1>
-    <header class="page-header">
+    <h1 class="visually-hidden">Deps</h1>
+    <header class="page__header">
       <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <a href="index.html" class="page-header__logo">
-          <img src="#" alt="Логотип" class="page-header__image" width="94" height="34">
-        </a>
-        <button class="button main-nav__price">Узнать цену</button>
+        <div class="header__wrap">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <a href="index.html" class="page-header__logo">
+            <img src="img/logo 1.png" alt="Логотип" class="page-header__image" width="94" height="34">
+          </a>
+          <button class="button main-nav__price">Узнать цену</button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -61,7 +63,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page__main">
 
       <section class="banner">
         <h2 class="banner__title">Парковочные решения</h2>
@@ -73,11 +75,11 @@
           </li>
           <li class="banner__item">
             <img src="#" alt="" class="banner__icon" width="40" height="40">
-            <p class="banner__description">Безопасность на территории</p>
+            <p class="banner__description">Безопас&#8211;ность на территории</p>
           </li>
           <li class="banner__item">
             <img src="#" alt="" class="banner__icon" width="40" height="40">
-            <p class="banner__description">Полная автоматизация проезда</p>
+            <p class="banner__description">Полная автомати&#8211;зация проезда</p>
           </li>
         </ul>
         <button class="button banner__consultation-button">Получить консультацию</button>
@@ -91,7 +93,6 @@
         <ul class="questions__comments-field comments-field">
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
               <p class="user-field__message-text">Занята парковка автомобилями с соседних дворов</p>
             </div>
             <div class="user-field__user-picture">
@@ -100,7 +101,6 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
               <p class="user-field__message-text">Неопознанные авто на парковке</p>
             </div>
             <div class="user-field__user-picture">
@@ -109,7 +109,6 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
               <p class="user-field__message-text">Какое парковочное решение будет оптимальным для вас</p>
             </div>
             <div class="user-field__user-picture">
@@ -118,16 +117,14 @@
           </li>
           <li class="comments-field__user-field user-field">
             <div class="user-field__user-message">
-              <span class="urer-field__help">?</span>
               <p class="user-field__message-text">Где найти компетентного и надежного подрядчика</p>
             </div>
             <div class="user-field__user-picture">
               <img src="#" alt="" class="user-field__img" height="40">
             </div>
           </li>
+          <img src="#" alt="" class="questions__image" width="328" height="436">
           <li class="questions__description">
-            <img src="#" alt="" class="questions__image" width="328" height="436">
-            <span class="urer-field__help">?</span>
             <p class="questions__text">
               Большинство (78,5%) представителей жилых комплексов не знают, какое парковочное решение оптимально
               подойдет для их ЖК. И это нормально, так как на рынке большой выбор парковочных решений, которые могут
@@ -178,18 +175,19 @@
               <span class="product-card__icon">на базе GSM решения</span>
             </div>
             <h3 class="product-card__title">Комплект Базовый</h3>
-            <p class="product-card__description">Проезд на территорию осуществляется при помощи телефонного звонка (GSM)
-            </p>
             <ul class="product-card__list">
+              <p class="product-card__description">Проезд на территорию осуществляется при помощи телефонного звонка
+                (GSM)
+              </p>
               <li class="product-card__item">Шлагбаум</li>
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">Gsm-контроллер</li>
+              <li class="product-card__item product-card__item--bolder">Gsm-контроллер</li>
             </ul>
             <div class="product-card__price card-price">
               <div class="card-price__title">
-                <p class="card-price__older">от 1500$<span class="card-price__current">от 800$</span></p>
+                <span class="card-price__older">от 1500$</span><span class="card-price__current">от 800$</span>
                 <p class="card-price__description">*без учета стоимости работы</p>
               </div>
               <div class="card-price__order price-button">
@@ -210,12 +208,12 @@
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">IP-камера</li>
-              <li class="product-card__item">Poe watchdog коммутатор</li>
+              <li class="product-card__item product-card__item--bolder">IP-камера</li>
+              <li class="product-card__item product-card__item--bolder">Poe watchdog коммутатор</li>
             </ul>
             <div class="product-card__price card-price">
               <div class="card-price__title">
-                <p class="card-price__older">от 2100$<span class="card-price__current">от 1400$</span></p>
+                <span class="card-price__older">от 2100$</span><span class="card-price__current">от 1400$</span>
                 <p class="card-price__description">*без учета стоимости работы</p>
               </div>
               <div class="card-price__order price-button">
@@ -236,13 +234,13 @@
               <li class="product-card__item">Радар для обнаружения авто</li>
               <li class="product-card__item">Контроллер индукционной (магнитной)</li>
               <li class="product-card__item">Монтажный комплект</li>
-              <li class="product-card__item">UHF-считыватель уличный</li>
-              <li class="product-card__item">Считыватель настольный UHF</li>
-              <li class="product-card__item">Бессконтактные UHF метки</li>
+              <li class="product-card__item product-card__item--bolder">UHF-считыватель уличный</li>
+              <li class="product-card__item product-card__item--bolder">Считыватель настольный UHF</li>
+              <li class="product-card__item product-card__item--bolder">Бессконтактные UHF метки</li>
             </ul>
             <div class="product-card__price card-price">
               <div class="card-price__title">
-                <p class="card-price__older">от 2400$<span class="card-price__current">от 1600$</span></p>
+                <span class="card-price__older">от 2400$</span><span class="card-price__current">от 1600$</span>
                 <p class="card-price__description">*без учета стоимости работы</p>
               </div>
               <div class="card-price__order price-button">
@@ -352,9 +350,7 @@
           <div class="equipment__show-more show-more">
             <a href="#" class="show-more__link">Показать еще</a>
           </div>
-          <div class="equipment__button">
-            <a href="#" class="equipment__price-button button">Расчитать стоимость</a>
-          </div>
+          <button href="#" class="equipment__price-button button">Расчитать стоимость</button>
         </div>
       </section>
 
@@ -399,25 +395,31 @@
           <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="footer-social__icon-link">
             <img src="#" alt="" class="footer-social__icon" width="54" height="54">
           </a><br>
-          <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="footer-social__link">Yevgen.Mikhaylov@deps.ua</a>
+          <div class="footer-social__link-wrap">
+            <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="footer-social__link">Yevgen.Mikhaylov@deps.ua</a>
+          </div>
         </div>
         <div class="footer-social__adress">
           <a href="#" class="footer-social__icon-link">
             <img src="#" alt="" class="footer-social__icon" width="54" height="54">
           </a><br>
-          <a href="#" class="footer-social__link">ул. Маричанская, 18, г. Киев, 03040, Украина</a>
+          <div class="footer-social__link-wrap">
+            <a href="#" class="footer-social__link">ул. Маричанская, 18, г. Киев, 03040, Украина</a>
+          </div>
         </div>
         <div class="footer-social__phone">
           <a href="tel:+380676184407" class="footer-social__icon-link">
             <img src="#" alt="" class="footer-social__icon" width="54" height="54">
           </a><br>
-          <a href="tel:+380676184407" class="footer-social__link">+380 67 618 44 07</a>
+          <div class="footer-social__link-wrap">
+            <a href="tel:+380676184407" class="footer-social__link">+380 67 618 44 07</a>
+          </div>
         </div>
       </div>
       <div class="page-footer__copyright footer-copyright">
-        <p class="footer-copyright__text">
-          © 2022 DEPS. Все права защищены. Использование материалов с сайта — только с разрешения администрации.<br>
-          Цены указаны с учетом НДС. Сумма в долларах США является ориентировочной и не является ценой товара. Оплата
+        <p class="footer-copyright__title">
+          © 2022 DEPS. Все права защищены. Использование материалов с сайта — только с разрешения администрации.</p>
+          <p class="footer-copyright__subtitle">Цены указаны с учетом НДС. Сумма в долларах США является ориентировочной и не является ценой товара. Оплата
           осуществляется в грн по курсу на день оплаты.
         </p>
       </div>

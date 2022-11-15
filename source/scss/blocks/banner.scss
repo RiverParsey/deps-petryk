@@ -1,0 +1,58 @@
+//Banner style
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.banner__title {
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.banner__subtitle {
+  width: 273px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: var(--basic_green);
+  background-color: var(--basic_light-green);
+  border-radius: 6px;
+}
+
+.banner__list {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 30px;
+}
+
+.banner__item {
+  min-width: 104px;
+  height: auto;
+}
+
+.banner__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--basic_img-background);
+}
+
+.banner__description {
+  margin: 0;
+}
+
+.banner__consultation-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
