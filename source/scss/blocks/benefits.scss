@@ -12,8 +12,8 @@
 }
 
 .benefits__icon {
-  display: block;
-  margin: 0 auto;
+  @include reCenter;
+  @include iconSize(40px, 40px);
   background-color: $basic_img-background;
   border-radius: 50%;
 }

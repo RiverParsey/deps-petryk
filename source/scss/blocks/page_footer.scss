@@ -16,8 +16,7 @@
 .footer-social__icon {
   display: block;
   margin: 0 auto;
-  width: 54px;
-  height: 54px;
+  @include iconSize(54px, 54px);
   border-radius: 50%;
   background-color: $basic_img-background;
 }
@@ -37,7 +36,7 @@
 
 .page-footer__copyright {
   font-size: 13px;
-  line-height: 170%;
+  line-height: 22.1px;
   text-align: center;
 }
 

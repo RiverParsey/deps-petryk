@@ -18,8 +18,7 @@
 }
 
 .work-list__icon {
-  width: 100px;
-  height: 100px;
+  @include iconSize(100px, 100px);
   border-radius: 50%;
   background-color: $basic_img-background;
 }

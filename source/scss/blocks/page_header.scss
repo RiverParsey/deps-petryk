@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  box-shadow: 0px 15px 30px -10px rgba(119, 122, 144, 0.15);
+  @include headerShadow;
 }
 
 .site-list {
@@ -26,8 +26,7 @@
 }
 
 .contact-info__icon {
-  width: 54px;
-  height: 54px;
+  @include iconSize(54px, 54px);
   border-radius: 50%;
   background-color: $basic_img-background;
 }
@@ -42,6 +41,5 @@
 }
 
 .contact-info__consultation-button {
-  display: block;
-  margin: 0 auto;
+  @include reCenter;
 }

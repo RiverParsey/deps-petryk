@@ -12,15 +12,3 @@ $basic_gray-background: linear-gradient(180deg, #fff 0%, #f5f6fa 27, 08%, #f5f6f
 $messages_background: linear-gradient(90deg, #F5F6FA 0%, #FFFFFF 100%);
 $basic_light-gray-background: linear-gradient(180deg, #FFFFFF 0%, #F5F6FA 100%);
 $equipment_background: linear-gradient(180deg,#fff 0,#f5f6fa 100%);
-
-@mixin columnFlex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@mixin rowFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}

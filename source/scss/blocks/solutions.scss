@@ -10,21 +10,19 @@
 }
 
 .product-card__pic {
-  display: block;
-  margin: 0 auto;
+  @include reCenter;
+  @include picSize(264px, 240px);
   background-color: $basic_img-background;
 }
 
 .product-card__icon {
-  width: 90px;
-  height: 90px;
+  @include iconSize(90px, 90px);
   color: $basic_white;
   background-color: $basic_orange;
 }
 
 .product-card__title {
-  font-size: 20px;
-  font-weight: 500;
+  @include secondFont;
 }
 
 .product-card__description {
@@ -52,9 +50,7 @@
 }
 
 .product-card__price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include reCenterFlex;
   column-gap: 4px;
 }
 
@@ -65,23 +61,18 @@
 }
 
 .card-price__older {
-  font-size: 14px;
-  line-height: 22.4px;
-  font-weight: 500;
+  @include thirdFont;
   text-decoration: line-through;
   margin-right: 10px;
   color: $basic_text-transparent;
 }
 
 .card-price__current {
-  font-size: 20px;
-  font-weight: 500;
+  @include secondFont;
 }
 
 .card-price__description {
-  font-size: 12px;
-  line-height: 15.6px;
-  font-weight: 300;
+  @include lightFont;
   margin: 0;
   margin-top: 8px;
 }
