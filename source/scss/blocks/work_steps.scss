@@ -1,0 +1,38 @@
+//Work-steps style
+
+.work-steps {
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.work-list__item {
+  flex-basis: 160px;
+  @include columnFlex;
+}
+
+.work-list__icon {
+  @include iconSize(100px, 100px);
+  border-radius: 50%;
+  background-color: $basic_img-background;
+}
+
+.work-list__title {
+  align-self: center;
+  margin: 10px auto;
+  padding: 0;
+}
+
+
+.work-list__description {
+  font-size: 13px;
+  line-height: 22.1px;
+  margin: 0;
+  padding: 0;
+}

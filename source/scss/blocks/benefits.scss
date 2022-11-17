@@ -1,0 +1,25 @@
+//Benefits style
+
+.benefits__list {
+  @include rowFlex;
+  gap: 16px;
+}
+
+.benefits__item {
+  font-size: 14px;
+  width: 152px;
+  height: auto;
+}
+
+.benefits__icon {
+  @include reCenter;
+  @include iconSize(40px, 40px);
+  background-color: $basic_img-background;
+  border-radius: 50%;
+}
+
+.benefits__subtitle {
+  font-size: 13px;
+  line-height: 22.1px;
+  color: $basic_text-transparent;
+}

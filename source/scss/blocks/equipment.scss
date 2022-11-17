@@ -1,0 +1,21 @@
+//Equitpment style
+
+.equipment {
+  padding: 60px auto;
+  background: $equipment_background;
+}
+
+.equipment__image {
+  @include picSize(120px, 120px);
+  background-color: $basic_img-background;
+}
+
+.show-more__link {
+  display: flex;
+  justify-content: center;
+}
+
+.equipment__price-button {
+  display: block;
+  margin: 20px auto;
+}

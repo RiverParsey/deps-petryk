@@ -1,0 +1,45 @@
+//Page-footer style
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.footer-social {
+  margin-bottom: 60px;
+}
+
+.footer-social__email {
+  margin-bottom: 16px;
+}
+
+.footer-social__icon {
+  display: block;
+  margin: 0 auto;
+  @include iconSize(54px, 54px);
+  border-radius: 50%;
+  background-color: $basic_img-background;
+}
+
+.footer-social__link-wrap {
+  text-align: center;
+}
+
+.footer-social__link {
+  font-weight: 500;
+  color: $basic_text-color;
+}
+
+.footer-social__adress {
+  margin-bottom: 16px;
+}
+
+.page-footer__copyright {
+  font-size: 13px;
+  line-height: 22.1px;
+  text-align: center;
+}
+
+.footer-copyright__subtitle {
+  margin: 0;
+}

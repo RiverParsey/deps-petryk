@@ -1,0 +1,19 @@
+//Realized-objects style
+
+.realized-objects {
+  padding: 60px 0;
+  background: $equipment_background;
+}
+
+.objects__image {
+  display: block;
+  margin-right: auto;
+  background-color: $basic_img-background;
+}
+
+.objects__toggles {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}

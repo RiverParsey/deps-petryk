@@ -1,0 +1,54 @@
+//Banner style
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.banner__title {
+  @include extra_largeFont;
+  margin: 15px 0;
+}
+
+.banner__subtitle {
+  width: 273px;
+  text-align: center;
+  @include largeFont;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: $basic_green;
+  background-color: $basic_light-green;
+  border-radius: 6px;
+}
+
+.banner__list {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 30px;
+}
+
+.banner__item {
+  min-width: 104px;
+  height: auto;
+}
+
+.banner__icon {
+  @include iconSize(40px, 40px);
+  border-radius: 50%;
+  background-color: $basic_img-background;
+}
+
+.banner__description {
+  margin: 0;
+}
+
+.banner__consultation-button {
+  @include reCenter;
+}
+
+.banner__image {
+  @include reCenter;
+  @include picSize(328px, 267px);
+  margin-top: 30px;
+  background-color: $basic_img-background;
+}

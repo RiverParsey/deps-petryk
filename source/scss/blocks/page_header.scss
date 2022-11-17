@@ -1,0 +1,45 @@
+//Page__header stayle
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: $header_shadow;
+}
+
+.site-list {
+  display: none;
+  @include columnFlex;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.contact-info {
+  display: none;
+  background-color: $basic_gray-background;
+}
+
+.contact-info__email {
+  @include columnFlex;
+  margin-bottom: 20px;
+}
+
+.contact-info__icon {
+  @include iconSize(54px, 54px);
+  border-radius: 50%;
+  background-color: $basic_img-background;
+}
+
+.contact-info__link {
+  color: $basic_text-color;
+}
+
+.contact-info__phone {
+  @include columnFlex;
+  margin-bottom: 26px;
+}
+
+.contact-info__consultation-button {
+  @include reCenter;
+}
