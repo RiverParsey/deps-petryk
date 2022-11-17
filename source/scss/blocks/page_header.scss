@@ -10,22 +10,18 @@
 
 .site-list {
   display: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnFlex;
   gap: 30px;
   margin: 60px 0;
 }
 
 .contact-info {
   display: none;
-  background-color: var(--basic_gray-background);
+  background-color: $basic_gray-background;
 }
 
 .contact-info__email {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnFlex;
   margin-bottom: 20px;
 }
 
@@ -33,17 +29,15 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background-color: var(--basic_img-background);
+  background-color: $basic_img-background;
 }
 
 .contact-info__link {
-  color: var(--basic_text-color);
+  color: $basic_text-color;
 }
 
 .contact-info__phone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnFlex;
   margin-bottom: 26px;
 }
 

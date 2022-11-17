@@ -16,7 +16,7 @@
 }
 
 .user-field__user-message {
-  background: var(--basic_gray-background);
+  background: $basic_gray-background;
   box-shadow: 0px 15px 20px rgba(119, 122, 144, 0.08);
   border-radius: 56px;
 }
@@ -28,11 +28,11 @@
 .questions__image {
   display: block;
   margin: 0 auto;
-  background-color: var(--basic_img-background);
+  background-color: $basic_img-background;
 }
 
 .questions__description {
-  background: linear-gradient(90deg, #F5F6FA 0%, #FFFFFF 100%);
+  background: $messages_background;
   border-radius: 16px 0px 0px 16px;
 }
 

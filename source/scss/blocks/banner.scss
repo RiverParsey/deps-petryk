@@ -19,8 +19,8 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 10px 20px;
-  color: var(--basic_green);
-  background-color: var(--basic_light-green);
+  color: $basic_green;
+  background-color: $basic_light-green;
   border-radius: 6px;
 }
 
@@ -39,7 +39,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--basic_img-background);
+  background-color: $basic_img-background;
 }
 
 .banner__description {
@@ -55,4 +55,5 @@
   display: block;
   margin: 0 auto;
   margin-top: 30px;
+  background-color: $basic_img-background;
 }

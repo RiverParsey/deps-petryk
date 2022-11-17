@@ -1,9 +1,7 @@
 //Benefits style
 
 .benefits__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @include rowFlex;
   gap: 16px;
 }
 
@@ -16,12 +14,12 @@
 .benefits__icon {
   display: block;
   margin: 0 auto;
-  background-color: var(--basic_img-background);
+  background-color: $basic_img-background;
   border-radius: 50%;
 }
 
 .benefits__subtitle {
   font-size: 13px;
   line-height: 22.1px;
-  color: var(--basic_text-transparent);
+  color: $basic_text-transparent;
 }

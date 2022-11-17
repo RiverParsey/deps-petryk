@@ -6,20 +6,20 @@
 
 .product-card {
   padding-bottom: 51px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F5F6FA 100%);
+  background: $basic_light-gray-background;
 }
 
 .product-card__pic {
   display: block;
   margin: 0 auto;
-  background-color: var(--basic_img-background);
+  background-color: $basic_img-background;
 }
 
 .product-card__icon {
   width: 90px;
   height: 90px;
-  color: var(--basic_white);
-  background-color: var(--basic_orange);
+  color: $basic_white;
+  background-color: $basic_orange;
 }
 
 .product-card__title {
@@ -61,16 +61,16 @@
 .card-price__title {
   max-width: 201px;
   padding: 17px 20px 17px 16px;
-  background-color: var(--basic_white);
+  background-color: $basic_white;
 }
 
 .card-price__older {
   font-size: 14px;
-  line-height: 160%;
+  line-height: 22.4px;
   font-weight: 500;
   text-decoration: line-through;
   margin-right: 10px;
-  color: var(--basic_text-transparent);
+  color: $basic_text-transparent;
 }
 
 .card-price__current {
@@ -80,7 +80,7 @@
 
 .card-price__description {
   font-size: 12px;
-  line-height: 130%;
+  line-height: 15.6px;
   font-weight: 300;
   margin: 0;
   margin-top: 8px;
@@ -88,7 +88,7 @@
 
 .price-button {
   padding: 17px 16px;
-  background-color: var(--basic_white);
+  background-color: $basic_white;
 }
 
 .price-button__order-button {
