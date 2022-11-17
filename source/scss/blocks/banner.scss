@@ -5,14 +5,14 @@
 }
 
 .banner__title {
-  @include firstFont;
+  @include extra_largeFont;
   margin: 15px 0;
 }
 
 .banner__subtitle {
   width: 273px;
   text-align: center;
-  @include secondFont;
+  @include largeFont;
   margin: 0;
   margin-bottom: 30px;
   padding: 10px 20px;

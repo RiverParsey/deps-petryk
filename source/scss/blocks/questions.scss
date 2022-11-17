@@ -18,7 +18,7 @@
 .user-field__user-message {
   background: $basic_gray-background;
   border-radius: 56px;
-  @include messageShadow;
+  box-shadow: $message_shadow;
 }
 
 .user-field__message-text {

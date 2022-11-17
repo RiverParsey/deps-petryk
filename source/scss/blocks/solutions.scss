@@ -22,7 +22,7 @@
 }
 
 .product-card__title {
-  @include secondFont;
+  @include largeFont;
 }
 
 .product-card__description {
@@ -61,18 +61,18 @@
 }
 
 .card-price__older {
-  @include thirdFont;
+  @include lightFont;
   text-decoration: line-through;
   margin-right: 10px;
   color: $basic_text-transparent;
 }
 
 .card-price__current {
-  @include secondFont;
+  @include largeFont;
 }
 
 .card-price__description {
-  @include lightFont;
+  @include extra_lightFont;
   margin: 0;
   margin-top: 8px;
 }
