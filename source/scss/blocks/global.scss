@@ -1,4 +1,4 @@
- //Global styles
+ // Global styles
 
 .visually-hidden {
   position: absolute;
@@ -19,14 +19,15 @@
 }
 
 .page__body {
-  max-width: 360px;
+  min-width: 360px;
   margin: 0 auto;
   font-family: 'Rubik', 'Arial', sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: $basic_text-color;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .page__main {
@@ -52,6 +53,12 @@ ol {
   border-radius: 6px;
   background-color: $basic_green;
   color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 30px;
+    font-size: 18px;
+    line-height: 21.33px;
+  }
 }
 
 .tip {
@@ -59,6 +66,11 @@ ol {
   margin: 0;
   padding-left: 25px;
   color: $basic_green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
 }
 
 .tip__title {
@@ -66,4 +78,10 @@ ol {
   margin: 0;
   margin-bottom: 30px;
   color: $basic_text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 46px;
+    line-height: 55.2px;
+    margin-bottom: 40px;
+  }
 }

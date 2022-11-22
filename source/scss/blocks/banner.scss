@@ -1,12 +1,34 @@
-//Banner style
+// Banner style
 
 .banner {
   margin-bottom: 60px;
+  @include mobilePadding;
+
+  @media (min-width: $tablet-width) {
+    @include startColumnFlex;
+    @include tabletPadding;
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktopPadding;
+    padding-top: 110px;
+    padding-bottom: 240px;
+    margin: 0;
+  }
 }
 
 .banner__title {
   @include extra_largeFont;
   margin: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 680px;
+    font-size: 60px;
+    line-height: 72px;
+    margin: 20px 0;
+  }
 }
 
 .banner__subtitle {
@@ -19,31 +41,70 @@
   color: $basic_green;
   background-color: $basic_light-green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 36px;
+  }
 }
 
 .banner__list {
   display: flex;
   column-gap: 8px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 40px;
+  }
 }
 
 .banner__item {
   min-width: 104px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: auto;
+  }
 }
 
 .banner__icon {
   @include iconSize(40px, 40px);
   border-radius: 50%;
   background-color: $basic_img-background;
+
+  @media (min-width: $desktop-width) {
+    @include iconSize(50px, 50px);
+  }
 }
 
 .banner__description {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
 }
 
 .banner__consultation-button {
   @include reCenter;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 
 .banner__image {
@@ -51,4 +112,8 @@
   @include picSize(328px, 267px);
   margin-top: 30px;
   background-color: $basic_img-background;
+
+  @media (min-width: $desktop-width) {
+    @include picSize(654px, 530px);
+  }
 }

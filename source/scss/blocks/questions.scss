@@ -1,13 +1,26 @@
-//Questions style
+// Questions style
 
 .questions {
   margin-bottom: 30px;
+  @include mobilePadding;
+
+  @media (min-width: $tablet-width) {
+    @include tabletPadding;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktopPadding;
+  }
 }
 
 .comments-field {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 88px;
+  }
 }
 
 .user-field {
@@ -19,21 +32,56 @@
   background: $basic_gray-background;
   border-radius: 56px;
   box-shadow: $message_shadow;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 604px;
+  }
 }
 
 .user-field__message-text {
   max-height: 48px;
 }
 
+.user-field__user-picture {
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.user-field__img {
+  @include picSize(40px, 40px);
+  background-color: $basic_img-background;
+
+  @media (min-width: $tablet-width) {
+    @include picSize(72px, 72px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include picSize(80px, 80px);
+  }
+}
+
 .questions__image {
   @include reCenter;
   @include picSize(328px, 436px);
   background-color: $basic_img-background;
+
+  @media (min-width: $desktop-width) {
+    @include picSize(380px, 630px);
+  }
 }
 
 .questions__description {
   background: $messages_background;
   border-radius: 16px 0px 0px 16px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
 }
 
 .questions__text {

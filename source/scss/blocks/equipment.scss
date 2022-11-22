@@ -1,8 +1,71 @@
-//Equitpment style
+// Equipment style
 
 .equipment {
-  padding: 60px auto;
+  @include mobilePadding;
+  @include sectionPadding;
   background: $equipment_background;
+
+  @media (min-width: $tablet-width) {
+    padding: 120px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktopPadding;
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+
+.equipment__wrap {
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 940px;
+    height: 882px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+}
+
+.equipment__item--0 {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.equipment__item--a {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.equipment__item--b {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+}
+
+.equipment__item--c {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+  }
+}
+
+.equipment__item--d {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
 }
 
 .equipment__image {
@@ -13,9 +76,58 @@
 .show-more__link {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .equipment__price-button {
   display: block;
   margin: 20px auto;
+}
+
+.equipment__wrapper {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 940px;
+    height: 580px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+
+.equipment__item--e {
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+}
+
+.equipment__item--f {
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+}
+
+.equipment__item--g {
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
+.equipment__item--h {
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -1;
+    grid-row: 2 / -1;
+  }
 }

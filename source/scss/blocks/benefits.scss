@@ -1,14 +1,44 @@
-//Benefits style
+// Benefits style
+
+.benefits {
+  @include mobilePadding;
+  @include sectionPadding;
+
+  @media (min-width: $tablet-width) {
+    @include tabletPadding;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktopPadding;
+    padding-top: 120px;
+  }
+}
 
 .benefits__list {
   @include rowFlex;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
 .benefits__item {
   font-size: 14px;
   width: 152px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 460px;
+    height: 214px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 280px;
+    height: auto;
+  }
 }
 
 .benefits__icon {
@@ -18,8 +48,21 @@
   border-radius: 50%;
 }
 
+.benefits__title {
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .benefits__subtitle {
   font-size: 13px;
   line-height: 22.1px;
   color: $basic_text-transparent;
+
+  @media (min-width: $desktop-width) {
+    font-size: 1rem;
+    line-height: 27.2px;
+  }
 }
