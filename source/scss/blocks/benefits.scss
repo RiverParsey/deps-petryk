@@ -4,11 +4,11 @@
   @include mobilePadding;
   @include sectionPadding;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     @include tabletPadding;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
     padding-top: 120px;
   }
@@ -18,7 +18,7 @@
   @include rowFlex;
   gap: 16px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     justify-content: space-between;
     gap: 20px;
   }
@@ -29,13 +29,13 @@
   width: 152px;
   height: auto;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     flex-basis: 460px;
     height: 214px;
     gap: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     flex-basis: 280px;
     height: auto;
   }
@@ -50,9 +50,8 @@
 
 .benefits__title {
 
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
+  @include desktopWidth {
+    @include sizeSetter(20px, 30px);
   }
 }
 
@@ -61,8 +60,7 @@
   line-height: 22.1px;
   color: $basic_text-transparent;
 
-  @media (min-width: $desktop-width) {
-    font-size: 1rem;
-    line-height: 27.2px;
+  @include desktopWidth {
+    @include sizeSetter(1rem, 27.2px);
   }
 }

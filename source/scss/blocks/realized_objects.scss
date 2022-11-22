@@ -5,13 +5,13 @@
   @include sectionPadding;
   background: $equipment_background;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     @include tabletPadding;
     padding-top: 120px;
     padding-bottom: 60px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
     padding-bottom: 60px;
   }
@@ -19,7 +19,7 @@
 
 .objects {
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -44,9 +44,8 @@
   color: $basic_orange;
   background-color: #F5F6FA;
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+  @include tabletWidth {
+    @include mainSizes(80px, 80px);
   }
 }
 
@@ -54,9 +53,8 @@
   margin: 0;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+  @include tabletWidth {
+    @include sizeSetter(20px, 30px);
   }
 }
 

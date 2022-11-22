@@ -55,6 +55,15 @@
   height: $height;
 }
 
+@mixin circleRadius {
+  border-radius: 50%;
+}
+
+@mixin mainSizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 // Fonts
 
 @mixin tipFont {
@@ -90,6 +99,11 @@
   font-weight: 300;
 }
 
+@mixin sizeSetter($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 // Center
 
 @mixin reCenter {
@@ -114,4 +128,24 @@
 
 @mixin desktopPadding {
   padding: 0 370px;
+}
+
+// Media Queries
+
+@mixin tabletWidth {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktopWidth {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin mobileWidth {
+  @media (max-width: $only_mobile-width) {
+    @content;
+  }
 }

@@ -5,11 +5,11 @@
   @include mobilePadding;
   @include sectionPadding;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     padding: 120px 42px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -21,13 +21,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+  padding-bottom: 26px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     gap: 20px;
     margin-bottom: 90px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     gap: 40px;
   }
 }
@@ -36,12 +37,12 @@
   flex-basis: 160px;
   @include columnFlex;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     flex-basis: 220px;
     height: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     flex-basis: 260px;
     height: auto;
   }
@@ -49,7 +50,7 @@
 
 .work-list__icon {
   @include iconSize(100px, 100px);
-  border-radius: 50%;
+  @include circleRadius;
   background-color: $basic_img-background;
 }
 
@@ -59,9 +60,8 @@
   margin: 10px auto;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+  @include tabletWidth {
+    @include sizeSetter(20px, 30px);
     font-weight: 500;
   }
 }
@@ -73,14 +73,16 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     line-height: 27.2px;
   }
 }
 
 .work-list__order-button {
+  margin-top: 30px;
+  @include reCenter;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     padding: 17px 30px;
   }
 }

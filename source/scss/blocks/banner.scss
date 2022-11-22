@@ -4,14 +4,14 @@
   margin-bottom: 60px;
   @include mobilePadding;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     @include startColumnFlex;
     @include tabletPadding;
     padding-top: 80px;
     padding-bottom: 120px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
     padding-top: 110px;
     padding-bottom: 240px;
@@ -23,10 +23,9 @@
   @include extra_largeFont;
   margin: 15px 0;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     width: 680px;
-    font-size: 60px;
-    line-height: 72px;
+    @include sizeSetter(60px, 72px);
     margin: 20px 0;
   }
 }
@@ -42,14 +41,13 @@
   background-color: $basic_light-green;
   border-radius: 6px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     width: 380px;
-    font-size: 30px;
-    line-height: 32px;
+    @include sizeSetter(30px, 32px);
     margin-bottom: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     line-height: 36px;
   }
 }
@@ -59,7 +57,7 @@
   column-gap: 8px;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     column-gap: 40px;
   }
 }
@@ -68,12 +66,12 @@
   min-width: 104px;
   height: auto;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     width: 140px;
     height: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     width: 170px;
     height: auto;
   }
@@ -84,7 +82,7 @@
   border-radius: 50%;
   background-color: $basic_img-background;
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include iconSize(50px, 50px);
   }
 }
@@ -92,16 +90,15 @@
 .banner__description {
   margin: 0;
 
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 28.8px;
+  @include desktopWidth {
+    @include sizeSetter(18px, 28.8px);
   }
 }
 
 .banner__consultation-button {
   @include reCenter;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     margin-left: 0;
     margin-right: auto;
   }
@@ -113,7 +110,7 @@
   margin-top: 30px;
   background-color: $basic_img-background;
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include picSize(654px, 530px);
   }
 }

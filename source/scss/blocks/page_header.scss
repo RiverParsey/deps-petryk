@@ -1,8 +1,7 @@
 // Page__header style
 
 .header__mobile-wrap {
-
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     display: none;
   }
 }
@@ -61,7 +60,7 @@
 
 .tablet-desktop {
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     display: block;
     @include justifyFlex;
     padding-top: 10px;
@@ -71,14 +70,14 @@
     box-shadow: $header_shadow;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
   }
 }
 
 .tablet-desktop__image {
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include picSize(150px, 55px);
   }
 }
@@ -88,6 +87,13 @@
 }
 
 .tablet-desktop__item {
-  font-size: 18px;
-  line-height: 28.8px;
+  @include sizeSetter(18px, 28.8px);
+}
+
+.tablet-desktop__link {
+  color: $basic_text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -4,12 +4,12 @@
   padding-top: 60px;
   padding-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     @include tabletPadding;
     padding-top: 120px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktopWidth {
     @include desktopPadding;
     padding-top: 120px;
   }
@@ -18,7 +18,7 @@
 .footer-social {
   margin-bottom: 60px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,7 +28,7 @@
 .footer-social__email {
   margin-bottom: 16px;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     flex-basis: 271px;
   }
 }
@@ -37,16 +37,15 @@
   display: block;
   margin: 0 auto;
   @include iconSize(54px, 54px);
-  border-radius: 50%;
+  @include circleRadius;
   background-color: $basic_img-background;
 }
 
 .footer-social__link-wrap {
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px
+  @include tabletWidth {
+    @include sizeSetter(20px, 30px);
   }
 }
 
@@ -58,28 +57,26 @@
 .footer-social__adress {
   margin-bottom: 16px;
 
-  @media (min-width: $tablet-width) {
-  flex-basis: 300px;
-  margin-left: 49px;
-  margin-right: 143px;
+  @include tabletWidth {
+    flex-basis: 300px;
+    margin-left: 49px;
+    margin-right: 143px;
   }
 }
 
 .footer-social__phone {
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     flex-basis: 177px;
   }
 }
 
 .page-footer__copyright {
-  font-size: 13px;
-  line-height: 22.1px;
+  @include sizeSetter(13px, 22.1px);
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    font-size: 1rem;
-    line-height: 27.2px;
+  @include tabletWidth {
+    @include sizeSetter(1rem, 27.2px);
     padding: 0 20px 60px 20px;
     color: $basic_text-transparent;
   }
@@ -87,7 +84,7 @@
 
 .footer-copyright__titleWrap {
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     width: 698px;
     margin: 10px auto;
   }
@@ -95,8 +92,4 @@
 
 .footer-copyright__subtitle {
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    color: inherit;
-  }
 }

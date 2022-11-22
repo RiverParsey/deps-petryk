@@ -54,10 +54,9 @@ ol {
   background-color: $basic_green;
   color: $basic_white;
 
-  @media (min-width: $tablet-width) {
+  @include tabletWidth {
     padding: 17px 30px;
-    font-size: 18px;
-    line-height: 21.33px;
+    @include sizeSetter(18px, 21.33px);
   }
 }
 
@@ -67,9 +66,8 @@ ol {
   padding-left: 25px;
   color: $basic_green;
 
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 28.8px;
+  @include tabletWidth {
+    @include sizeSetter(18px, 28.8px);
   }
 }
 
@@ -79,9 +77,8 @@ ol {
   margin-bottom: 30px;
   color: $basic_text-color;
 
-  @media (min-width: $tablet-width) {
-    font-size: 46px;
-    line-height: 55.2px;
+  @include tabletWidth {
+    @include sizeSetter(46px, 55.2px);
     margin-bottom: 40px;
   }
 }
