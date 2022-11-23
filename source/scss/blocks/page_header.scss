@@ -63,9 +63,7 @@
   @include tabletWidth {
     display: block;
     @include justifyFlex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    @include tabletPadding;
+    padding: 10px 42px;
     margin: 0;
     box-shadow: $header_shadow;
   }

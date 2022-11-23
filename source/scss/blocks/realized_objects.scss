@@ -6,14 +6,11 @@
   background: $equipment_background;
 
   @include tabletWidth {
-    @include tabletPadding;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 120px 42px 60px 42px;
   }
 
   @include desktopWidth {
-    @include desktopPadding;
-    padding-bottom: 60px;
+    padding: 0 370px 60px 370px;
   }
 }
 
@@ -40,7 +37,7 @@
 .objects__icon {
   @include iconSize(90px, 90px);
   @include columnFlex;
-  border-radius: 50%;
+  @include circleRadius;
   color: $basic_orange;
   background-color: #F5F6FA;
 

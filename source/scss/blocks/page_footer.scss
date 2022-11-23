@@ -5,13 +5,11 @@
   padding-bottom: 30px;
 
   @include tabletWidth {
-    @include tabletPadding;
-    padding-top: 120px;
+    padding: 120px 42px 0 42px;
   }
 
   @include desktopWidth {
-    @include desktopPadding;
-    padding-top: 120px;
+    padding: 120px 370px 0 370px;
   }
 }
 

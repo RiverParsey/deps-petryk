@@ -9,8 +9,7 @@
   }
 
   @include desktopWidth {
-    @include desktopPadding;
-    padding-top: 120px;
+    padding: 120px 370px 0 370px;
   }
 }
 
@@ -26,18 +25,15 @@
 
 .benefits__item {
   font-size: 14px;
-  width: 152px;
-  height: auto;
+  @include mainSizes(152px, auto);
 
   @include tabletWidth {
-    flex-basis: 460px;
-    height: 214px;
+    @include mainSizes(460px, 214px);
     gap: 20px;
   }
 
   @include desktopWidth {
-    flex-basis: 280px;
-    height: auto;
+    @include mainSizes(280px, auto);
   }
 }
 
@@ -45,7 +41,7 @@
   @include reCenter;
   @include iconSize(40px, 40px);
   background-color: $basic_img-background;
-  border-radius: 50%;
+  @include circleRadius;
 }
 
 .benefits__title {
@@ -56,8 +52,7 @@
 }
 
 .benefits__subtitle {
-  font-size: 13px;
-  line-height: 22.1px;
+  @include sizeSetter(13px, 22.1px);
   color: $basic_text-transparent;
 
   @include desktopWidth {

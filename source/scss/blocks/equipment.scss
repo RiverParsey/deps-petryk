@@ -10,9 +10,7 @@
   }
 
   @include desktopWidth {
-    @include desktopPadding;
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding: 120px 370px 90px 370px;
   }
 }
 
@@ -93,6 +91,7 @@
 }
 
 .equipment__price-button {
+  width: max-content;
   display: block;
   margin: 20px auto;
 }
