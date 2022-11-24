@@ -1,25 +1,61 @@
-//Benefits style
+// Benefits style
+
+.benefits {
+  @include mobilePadding;
+  @include sectionPadding;
+
+  @include tabletWidth {
+    @include tabletPadding;
+  }
+
+  @include desktopWidth {
+    padding: 120px 370px 0 370px;
+  }
+}
 
 .benefits__list {
   @include rowFlex;
   gap: 16px;
+
+  @include tabletWidth {
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
 .benefits__item {
   font-size: 14px;
-  width: 152px;
-  height: auto;
+  @include mainSizes(152px, auto);
+
+  @include tabletWidth {
+    @include mainSizes(460px, 214px);
+    gap: 20px;
+  }
+
+  @include desktopWidth {
+    @include mainSizes(280px, auto);
+  }
 }
 
 .benefits__icon {
   @include reCenter;
   @include iconSize(40px, 40px);
   background-color: $basic_img-background;
-  border-radius: 50%;
+  @include circleRadius;
+}
+
+.benefits__title {
+
+  @include desktopWidth {
+    @include sizeSetter(20px, 30px);
+  }
 }
 
 .benefits__subtitle {
-  font-size: 13px;
-  line-height: 22.1px;
+  @include sizeSetter(13px, 22.1px);
   color: $basic_text-transparent;
+
+  @include desktopWidth {
+    @include sizeSetter(1rem, 27.2px);
+  }
 }

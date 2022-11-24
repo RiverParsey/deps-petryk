@@ -1,14 +1,58 @@
-//Realized-objects style
+// Realized-objects style
 
 .realized-objects {
-  padding: 60px 0;
+  @include mobilePadding;
+  @include sectionPadding;
   background: $equipment_background;
+
+  @include tabletWidth {
+    padding: 120px 42px 60px 42px;
+  }
+
+  @include desktopWidth {
+    padding: 0 370px 60px 370px;
+  }
+}
+
+.objects {
+
+  @include tabletWidth {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+.objects__wrap--disabled {
+  display: none;
 }
 
 .objects__image {
   display: block;
   margin-right: auto;
   background-color: $basic_img-background;
+}
+
+.objects__icon {
+  @include iconSize(90px, 90px);
+  @include columnFlex;
+  @include circleRadius;
+  color: $basic_orange;
+  background-color: #F5F6FA;
+
+  @include tabletWidth {
+    @include mainSizes(80px, 80px);
+  }
+}
+
+.objects__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include tabletWidth {
+    @include sizeSetter(20px, 30px);
+  }
 }
 
 .objects__toggles {

@@ -1,12 +1,67 @@
-//Solutions style
+// Solutions style
 
 .solutions {
-  padding-top: 60px;
+  padding-top: 16px;
+
+  @include tabletWidth {
+    padding-top: 120px;
+  }
+}
+
+.solutions__tip {
+  padding: 0 41px;
+
+  @include tabletWidth {
+    padding-left: 67px;
+  }
+
+  @include desktopWidth {
+    padding-left: 395px;
+  }
+}
+
+.solutions__title {
+  @include mobilePadding;
+
+  @include tabletWidth {
+    @include tabletPadding;
+  }
+
+  @include desktopWidth {
+    @include desktopPadding;
+  }
+}
+
+.cards {
+
+  @include tabletWidth {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .product-card {
-  padding-bottom: 51px;
+  padding: 0 16px 51px 16px;
   background: $basic_light-gray-background;
+
+  @include tabletWidth {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 42px 51px 42px;
+  }
+
+  @include desktopWidth {
+    padding: 0 370px 60px 370px;
+  }
+}
+
+.product-card__wrap {
+
+  @include tabletWidth {
+    @include mainSizes(460px, 268px);
+    background-color: $basic_white;
+    border-radius: 0 30px;
+  }
 }
 
 .product-card__pic {
@@ -17,19 +72,54 @@
 
 .product-card__icon {
   @include iconSize(90px, 90px);
+  @include columnFlex;
+  @include circleRadius;
   color: $basic_white;
   background-color: $basic_orange;
+
+  @include tabletWidth {
+    @include iconSize(118px, 118px);
+  }
+}
+
+.product-card__info-wrap {
+
+  @include tabletWidth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktopWidth {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.product-card__content-wrap {
+
+  @include tabletWidth {
+    max-width: 450px;
+    margin-left: 30px;
+  }
 }
 
 .product-card__title {
   @include largeFont;
+
+  @include tabletWidth {
+    @include sizeSetter(30px, 36px);
+  }
 }
 
 .product-card__description {
   font-size: 15px;
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
+  margin-bottom: 16px;
+
+  @include tabletWidth {
+    @include sizeSetter(18px, 28.8px);
+  }
 }
 
 .product-card__list {
@@ -39,6 +129,10 @@
 .product-card__item {
   font-size: 15px;
   padding-left: 41px;
+
+  @include tabletWidth {
+    line-height: 27.2px;
+  }
 }
 
 .product-card__item:not(:last-of-type) {
@@ -51,13 +145,24 @@
 
 .product-card__price {
   @include reCenterFlex;
+  flex-wrap: nowrap;
   column-gap: 4px;
+
+  @include desktopWidth {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card-price__title {
   max-width: 201px;
   padding: 17px 20px 17px 16px;
   background-color: $basic_white;
+
+  @include tabletWidth {
+    padding: 17px 30px;
+    margin-bottom: 4px;
+  }
 }
 
 .card-price__older {
@@ -65,23 +170,50 @@
   text-decoration: line-through;
   margin-right: 10px;
   color: $basic_text-transparent;
+
+  @include tabletWidth {
+    @include sizeSetter(18px, 28.8px);
+  }
 }
 
 .card-price__current {
   @include largeFont;
+
+  @include tabletWidth {
+    @include sizeSetter(28px, 32px);
+  }
 }
 
 .card-price__description {
   @include extra_lightFont;
   margin: 0;
   margin-top: 8px;
+
+  @include tabletWidth {
+    @include sizeSetter(14px, 18.2px);
+    font-weight: 300;
+    color: $basic_text-transparent;
+  }
 }
 
 .price-button {
   padding: 17px 16px;
   background-color: $basic_white;
+
+  @include tabletWidth {
+    @include sizeSetter(18px, 21.33px);
+    padding: 30px;
+  }
+
+  @include desktopWidth {
+    padding: 30px 48px;
+  }
 }
 
 .price-button__order-button {
   padding: 13px 20px;
+
+  @include tabletWidth {
+    padding: 17px 30px;
+  }
 }

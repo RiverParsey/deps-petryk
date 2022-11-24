@@ -1,28 +1,50 @@
-//Page-footer style
+// Page-footer style
 
 .page-footer {
   padding-top: 60px;
   padding-bottom: 30px;
+
+  @include tabletWidth {
+    padding: 120px 42px 0 42px;
+  }
+
+  @include desktopWidth {
+    padding: 120px 370px 0 370px;
+  }
 }
 
 .footer-social {
   margin-bottom: 60px;
+
+  @include tabletWidth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer-social__email {
   margin-bottom: 16px;
+
+  @include tabletWidth {
+    flex-basis: 271px;
+  }
 }
 
 .footer-social__icon {
   display: block;
   margin: 0 auto;
   @include iconSize(54px, 54px);
-  border-radius: 50%;
+  @include circleRadius;
   background-color: $basic_img-background;
 }
 
 .footer-social__link-wrap {
   text-align: center;
+
+  @include tabletWidth {
+    @include sizeSetter(20px, 30px);
+  }
 }
 
 .footer-social__link {
@@ -32,12 +54,38 @@
 
 .footer-social__adress {
   margin-bottom: 16px;
+
+  @include tabletWidth {
+    flex-basis: 300px;
+    margin-left: 49px;
+    margin-right: 143px;
+  }
+}
+
+.footer-social__phone {
+
+  @include tabletWidth {
+    flex-basis: 177px;
+  }
 }
 
 .page-footer__copyright {
-  font-size: 13px;
-  line-height: 22.1px;
+  @include sizeSetter(13px, 22.1px);
   text-align: center;
+
+  @include tabletWidth {
+    @include sizeSetter(1rem, 27.2px);
+    padding: 0 20px 60px 20px;
+    color: $basic_text-transparent;
+  }
+}
+
+.footer-copyright__titleWrap {
+
+  @include tabletWidth {
+    width: 698px;
+    margin: 10px auto;
+  }
 }
 
 .footer-copyright__subtitle {

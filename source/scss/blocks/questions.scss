@@ -1,13 +1,26 @@
-//Questions style
+// Questions style
 
 .questions {
   margin-bottom: 30px;
+  @include mobilePadding;
+
+  @include tabletWidth {
+    @include tabletPadding;
+  }
+
+  @include desktopWidth {
+    @include desktopPadding;
+  }
 }
 
 .comments-field {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+
+  @include tabletWidth {
+    row-gap: 88px;
+  }
 }
 
 .user-field {
@@ -19,21 +32,54 @@
   background: $basic_gray-background;
   border-radius: 56px;
   box-shadow: $message_shadow;
+
+  @include tabletWidth {
+    @include sizeSetter(20px, 32px);
+    max-width: 604px;
+  }
 }
 
 .user-field__message-text {
   max-height: 48px;
 }
 
+.user-field__user-picture {
+
+  @include tabletWidth {
+    display: inline-block;
+  }
+}
+
+.user-field__img {
+  @include picSize(40px, 40px);
+  background-color: $basic_img-background;
+
+  @include tabletWidth {
+    @include picSize(72px, 72px);
+  }
+
+  @include desktopWidth {
+    @include picSize(80px, 80px);
+  }
+}
+
 .questions__image {
   @include reCenter;
   @include picSize(328px, 436px);
   background-color: $basic_img-background;
+
+  @include desktopWidth {
+    @include picSize(380px, 630px);
+  }
 }
 
 .questions__description {
   background: $messages_background;
   border-radius: 16px 0px 0px 16px;
+
+  @include desktopWidth {
+    @include sizeSetter(18px, 28.8px);
+  }
 }
 
 .questions__text {

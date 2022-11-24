@@ -1,10 +1,16 @@
-//Page__header stayle
+// Page__header style
 
-.header__wrap {
+.header__mobile-wrap {
+  @include tabletWidth {
+    display: none;
+  }
+}
+
+.header__logo-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 16px;
   box-shadow: $header_shadow;
 }
 
@@ -18,6 +24,7 @@
 .contact-info {
   display: none;
   background-color: $basic_gray-background;
+  padding: 0 16px;
 }
 
 .contact-info__email {
@@ -42,4 +49,49 @@
 
 .contact-info__consultation-button {
   @include reCenter;
+}
+
+.header__tablet-desktop-wrap {
+
+  @media (max-width: $only_mobile-width) {
+    display: none;
+  }
+}
+
+.tablet-desktop {
+
+  @include tabletWidth {
+    display: block;
+    @include justifyFlex;
+    padding: 10px 42px;
+    margin: 0;
+    box-shadow: $header_shadow;
+  }
+
+  @include desktopWidth {
+    @include desktopPadding;
+  }
+}
+
+.tablet-desktop__image {
+
+  @include desktopWidth {
+    @include picSize(150px, 55px);
+  }
+}
+
+.tablet-desktop__list {
+  @include spAroundFlex;
+}
+
+.tablet-desktop__item {
+  @include sizeSetter(18px, 28.8px);
+}
+
+.tablet-desktop__link {
+  color: $basic_text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
