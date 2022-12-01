@@ -16,11 +16,12 @@
 }
 
 .banner__title {
+  max-width: 80%;
   @include extra_largeFont;
   margin: 15px 0;
 
   @include tabletWidth {
-    max-width: 680px;
+    max-width: 45%;
     @include sizeSetter(60px, 72px);
     margin: 20px 0;
   }

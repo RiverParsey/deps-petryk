@@ -1,6 +1,7 @@
-// Page__header style
+// Page_header style
 
 .header__mobile-wrap {
+  padding-bottom: 20px;
   @include tabletWidth {
     display: none;
   }
@@ -14,15 +15,48 @@
   box-shadow: $header_shadow;
 }
 
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    width: 18px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    height: 2px;
+    content: "";
+    background-color: $basic_black;
+    box-shadow: 0 7px 0 0 black, 0 14px 0 0 black;
+  }
+
+  &::after:hover,
+  &::after:active {
+    color: $basic_text-transparent;
+  }
+}
+
 .site-list {
-  display: none;
   @include columnFlex;
   gap: 30px;
   margin: 60px 0;
 }
 
+.site-list__link {
+  color: $basic_text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .contact-info {
-  display: none;
   background-color: $basic_gray-background;
   padding: 0 16px;
 }
@@ -40,6 +74,10 @@
 
 .contact-info__link {
   color: $basic_text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contact-info__phone {
@@ -53,8 +91,12 @@
 
 .header__tablet-desktop-wrap {
 
-  @media (max-width: $only_mobile-width) {
+  @include mobileWidth {
     display: none;
+  }
+
+  @include tabletWidth {
+    display: block;
   }
 }
 
