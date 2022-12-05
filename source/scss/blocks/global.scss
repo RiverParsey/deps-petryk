@@ -82,3 +82,11 @@ ol {
     margin-bottom: 40px;
   }
 }
+
+.site-list--opened {
+  display: block;
+}
+
+.site-list--closed {
+  display: none;
+}
