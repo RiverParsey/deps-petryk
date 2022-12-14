@@ -73,8 +73,6 @@
 
 .banner__icon {
   @include iconSize(40px, 40px);
-  @include circleRadius;
-  background-color: $basic_img-background;
 
   @include desktopWidth {
     @include iconSize(50px, 50px);

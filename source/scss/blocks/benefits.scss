@@ -40,7 +40,6 @@
 .benefits__icon {
   @include reCenter;
   @include iconSize(40px, 40px);
-  background-color: $basic_img-background;
   @include circleRadius;
 }
 

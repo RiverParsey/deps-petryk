@@ -44,6 +44,10 @@
 }
 
 .user-field__user-picture {
+  @include mainSizes(40px, 40px);
+  margin-left: 62px;
+  background-color: $basic_white;
+  @include circleRadius;
 
   @include tabletWidth {
     display: inline-block;
@@ -51,8 +55,7 @@
 }
 
 .user-field__img {
-  @include picSize(40px, 40px);
-  background-color: $basic_img-background;
+  @include picSize(32px, 32px);
 
   @include tabletWidth {
     @include picSize(72px, 72px);

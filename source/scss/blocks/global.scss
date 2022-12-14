@@ -65,6 +65,17 @@ ol {
   margin: 0;
   padding-left: 25px;
   color: $basic_green;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $basic_green;
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
 
   @include tabletWidth {
     @include sizeSetter(18px, 28.8px);

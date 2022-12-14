@@ -66,8 +66,15 @@
   margin-bottom: 20px;
 }
 
+.contact-info__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mainSizes(54px, 54px);
+}
+
 .contact-info__icon {
-  @include iconSize(54px, 54px);
+  @include iconSize(24px, 24px);
   border-radius: 50%;
   background-color: $basic_img-background;
 }
@@ -101,6 +108,7 @@
 }
 
 .tablet-desktop {
+  display: none;
 
   @include tabletWidth {
     display: block;
@@ -135,5 +143,12 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.tablet-desktop__price {
+
+  @include tabletWidth {
+    display: block;
   }
 }
