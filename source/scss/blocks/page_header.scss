@@ -83,30 +83,19 @@
   @include mainSizes(54px, 54px);
   @include circleRadius;
   background-color: $basic_white;
-  position: relative;
+  margin: 0 auto;
+  @include reCenterFlex;
 }
 
 .contact-info__icon {
-
-  &::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-image: url(../../img/svg/page-footer_site-list_icon-phone.svg);
-    background-size: contain;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 15px auto;
-  }
+  @include mainSizes(24px, 24px);
+  background-image: url(../../img/svg/page-footer_site-list_icon-mail.svg);
+  background-size: contain;
+  background-position: center;
 }
 
-.contact-info__icon-mail {
-
-  &::before {
-    content: "";
-    background-image: url(../../img/svg/page-footer_site-list_icon-mail.svg);
-  }
+.contact-info__icon-phone {
+  background-image: url(../../img/svg/page-footer_site-list_icon-phone.svg);
 }
 
 .contact-info__link {
