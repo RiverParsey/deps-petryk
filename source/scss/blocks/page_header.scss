@@ -61,6 +61,12 @@
   padding: 0 16px;
 }
 
+.contact-info__wrap {
+  padding: 20px;
+  background: linear-gradient(180deg, #F5F6FA 0%, #FFFFFF 100%);
+  border-radius: 16px 0px 0px 16px;
+}
+
 .contact-info__email {
   @include columnFlex;
   margin-bottom: 20px;
@@ -73,10 +79,34 @@
   @include mainSizes(54px, 54px);
 }
 
+.contact-info__icon-wrap {
+  @include mainSizes(54px, 54px);
+  @include circleRadius;
+  background-color: $basic_white;
+  position: relative;
+}
+
 .contact-info__icon {
-  @include iconSize(24px, 24px);
-  border-radius: 50%;
-  background-color: $basic_img-background;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/svg/page-footer_site-list_icon-phone.svg);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px auto;
+  }
+}
+
+.contact-info__icon-mail {
+
+  &::before {
+    content: "";
+    background-image: url(../../img/svg/page-footer_site-list_icon-mail.svg);
+  }
 }
 
 .contact-info__link {
@@ -132,6 +162,7 @@
 
 .tablet-desktop__list {
   @include spAroundFlex;
+  padding: 0 20px;
 }
 
 .tablet-desktop__item {
@@ -143,12 +174,5 @@
 
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.tablet-desktop__price {
-
-  @include tabletWidth {
-    display: block;
   }
 }

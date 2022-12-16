@@ -44,19 +44,6 @@
   }
 }
 
-.work-list_icon-wrap {
-  @include mainSizes(100px, 100px);
-  @include circleRadius;
-  background-color: $basic_white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.work-list__icon {
-  @include iconSize(34.5px, 48px);
-}
-
 .work-list__title {
   text-align: center;
   align-self: center;

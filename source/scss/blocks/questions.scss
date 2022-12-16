@@ -44,26 +44,28 @@
 }
 
 .user-field__user-picture {
-  @include mainSizes(40px, 40px);
-  margin-left: 62px;
-  background-color: $basic_white;
-  @include circleRadius;
-
-  @include tabletWidth {
-    display: inline-block;
-  }
+  @include mainSizes(45px, 45px);
+  background: transparent;
+  @include reCenterFlex;
 }
 
-.user-field__img {
-  @include picSize(32px, 32px);
+.user-field__icon {
+  @include mainSizes(42px, 42px);
+  background-image: url(../../img/svg/questions_icon-blue-shirtWoman.svg);
+  background-size: contain;
+  background-position: center;
+}
 
-  @include tabletWidth {
-    @include picSize(72px, 72px);
-  }
+.user-field__icon-yellow-shirtMan {
+  background-image: url(../../img/svg/questions_icon-yellow-shirtMan.svg);
+}
 
-  @include desktopWidth {
-    @include picSize(80px, 80px);
-  }
+.user-field__icon-green-shirtMan {
+  background-image: url(../../img/svg/questions_icon-green-shirtMan.svg);
+}
+
+.user-field__icon-rose-shirtWoman {
+  background-image: url(../../img/svg/questions_icon-rose-shirtWoman.svg);
 }
 
 .questions__image {

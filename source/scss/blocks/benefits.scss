@@ -37,10 +37,30 @@
   }
 }
 
-.benefits__icon {
-  @include reCenter;
-  @include iconSize(40px, 40px);
+.benefits__icon-wrap {
+  @include mainSizes(66px, 66px);
   @include circleRadius;
+  background-color: $basic_white;
+  margin: 0 auto;
+  @include reCenterFlex;
+}
+
+.benefits__icon {
+  @include mainSizes(40px, 40px);
+  background-image: url(../../img/svg/benefits_icon-manager.svg);
+  background-size: contain;
+}
+
+.benefits__icon-key {
+  background-image: url(../../img/svg/benefits_icon-key.svg);
+}
+
+.benefits__icon-cogwheel {
+  background-image: url(../../img/svg/banner_benefits_icon-cogwheel.svg);
+}
+
+.benefits__icon-achievement {
+  background-image: url(../../img/svg/banner_work-steps_icon-brackets.svg);
 }
 
 .benefits__title {

@@ -50,23 +50,25 @@
                 </li>
               </ul>
               <div class="main-nav__contact-info contact-info site-list--closed">
-                <div class="contact-info__email">
-                  <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__icon-link">
-                    <picture>
-                      <img src="img/svg/page-footer_site-list_icon-mail.svg" alt="" class="contact-info__icon"
-                        width="54" height="54">
-                    </picture>
-                  </a><br>
-                  <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__link">Yevgen.Mikhaylov@deps.ua</a>
-                </div>
-                <div class="contact-info__phone">
-                  <a href="tel:+380676184407" class="contact-info__icon-link">
-                    <picture>
-                      <img src="img/svg/page-footer_site-list_icon-phone.svg" alt="" class="contact-info__icon"
-                        width="54" height="54">
-                    </picture>
-                  </a><br>
-                  <a href="tel:+380676184407" class="contact-info__link">+380 67 618 44 07</a>
+                <div class="contact-info__wrap">
+                  <div class="contact-info__email">
+                    <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__icon-link">
+                      <div class="contact-info__icon-wrap">
+                        <div class="contact-info__icon contact-info__icon-mail">
+                        </div>
+                      </div>
+                    </a><br>
+                    <a href="mailto:Yevgen.Mikhaylov@deps.ua" class="contact-info__link">Yevgen.Mikhaylov@deps.ua</a>
+                  </div>
+                  <div class="contact-info__phone">
+                    <a href="tel:+380676184407" class="contact-info__icon-link">
+                      <div class="contact-info__icon-wrap">
+                        <div class="contact-info__icon contact-info__icon-phone">
+                        </div>
+                      </div>
+                    </a><br>
+                    <a href="tel:+380676184407" class="contact-info__link">+380 67 618 44 07</a>
+                  </div>
                 </div>
                 <button class="button contact-info__consultation-button">Получить консультацию</button>
               </div>
@@ -116,20 +118,18 @@
         <p class="banner__subtitle">для жилых комплексов</p>
         <ul class="banner__list">
           <li class="banner__item">
-            <div class="banner__icon-wrap">
+            <div class="banner__icon-wrap banner__icon-wrap-brackets">
               <img src="img/svg/banner_work-steps_icon-brackets.svg" alt="" class="banner__icon" width="40" height="40">
             </div>
             <p class="banner__description">Контроль проезда автомобилей</p>
           </li>
           <li class="banner__item">
-            <div class="banner__icon-wrap">
-              <img src="img/svg/banner_icon-thumb.svg" alt="" class="banner__icon" width="40" height="40">
+            <div class="banner__icon-wrap banner__icon-wrap-thumb">
             </div>
             <p class="banner__description">Безопасность на территории</p>
           </li>
           <li class="banner__item">
-            <div class="banner__icon-wrap">
-              <img src="img/svg/banner_benefits_icon-cogwheel.svg" alt="" class="banner__icon" width="40" height="40">
+            <div class="banner__icon-wrap banner__icon-wrap-cogwheel">
             </div>
             <p class="banner__description">Полная автоматизация проезда</p>
           </li>
@@ -138,10 +138,10 @@
         <picture>
           <source media="(min-width: 1920px)"
             srcset="img/banner/banner_desktop-image.jpg, img/banner/banner_desktop-image@2x.jpg 2x" width="654"
-            height="530">
+            height="530" class="banner__image-desktop">
           <source media="(min-width: 769px)"
             srcset="img/banner/banner_tablet-image.jpg, img/banner/banner_tablet-image@2x.jpg 2x" width="440"
-            height="357">
+            height="357" class="banner__image-tablet">
           <img src="img/banner/banner-mobile_image.jpg" srcset="img/banner/banner-mobile_image@2x.jpg 2x" alt=""
             class="banner__image" width="328" height="267">
         </picture>
@@ -157,8 +157,8 @@
               <p class="user-field__message-text">Занята парковка автомобилями с соседних дворов</p>
             </div>
             <div class="user-field__user-picture">
-              <img src="img/svg/questions_icon-blue-shirtWoman.svg" alt="" class="user-field__img" width="32"
-                height="32">
+              <div class="user-field__icon user-field__icon-blue-shirtWoman">
+              </div>
             </div>
           </li>
           <li class="comments-field__user-field user-field">
@@ -166,8 +166,8 @@
               <p class="user-field__message-text">Неопознанные авто на парковке</p>
             </div>
             <div class="user-field__user-picture">
-              <img src="img/svg/questions_icon-yellow-shirtMan.svg" alt="" class="user-field__img" width="32"
-                height="32">
+              <div class="user-field__icon user-field__icon-yellow-shirtMan">
+              </div>
             </div>
           </li>
           <li class="comments-field__user-field user-field">
@@ -175,8 +175,8 @@
               <p class="user-field__message-text">Какое парковочное решение будет оптимальным для вас</p>
             </div>
             <div class="user-field__user-picture">
-              <img src="img/svg/questions_icon-green-shirtMan.svg" alt="" class="user-field__img" width="32"
-                height="32">
+              <div class="user-field__icon user-field__icon-green-shirtMan">
+              </div>
             </div>
           </li>
           <li class="comments-field__user-field user-field">
@@ -184,8 +184,8 @@
               <p class="user-field__message-text">Где найти компетентного и надежного подрядчика</p>
             </div>
             <div class="user-field__user-picture">
-              <img src="img/svg/questions_icon-rose-shirtWoman.svg" alt="" class="user-field__img" width="32"
-                height="32">
+              <div class="user-field__icon user-field__icon-rose-shirtWoman">
+              </div>
             </div>
           </li>
           <picture>
@@ -217,21 +217,27 @@
         <ul class="benefits__list">
           <li class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img src="img/svg/benefits_icon-manager.svg" alt="" class="benefits__icon" width="40" height="40">
+              <div class="benefits__icon benefits__icon-manager">
+
+              </div>
             </div>
             <h3 class="benefits__item-title">Индивидуально</h3>
             <p class="benefits__subtitle">Широкий выбор решений под ваши необходимости</p>
           </li>
           <li class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img src="img/svg/benefits_icon-key.svg" alt="" class="benefits__icon" width="40" height="40">
+              <div class="benefits__icon benefits__icon-key">
+
+              </div>
             </div>
             <h3 class="benefits__item-title">Удобно</h3>
             <p class="benefits__subtitle">Реализация проекта под ключ</p>
           </li>
           <li class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img src="img/svg/banner_benefits_icon-cogwheel.svg" alt="" class="benefits__icon" width="40" height="40">
+              <div class="benefits__icon benefits__icon-cogwheel">
+
+              </div>
             </div>
             <h3 class="benefits__item-title">Профессионально</h3>
             <p class="benefits__subtitle">Выбор, установка, настройка и запуск парковки в вашем ЖК нашими опытными
@@ -239,7 +245,9 @@
           </li>
           <li class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img src="img/svg/benefits_icon-achievement.svg" alt="" class="benefits__icon" width="40" height="40">
+              <div class="benefits__icon benefits__icon-achievement">
+
+              </div>
             </div>
             <h3 class="benefits__item-title">Надежно</h3>
             <p class="benefits__subtitle">Гарантия на парковочную систему - 12 месяцев</p>
@@ -378,7 +386,9 @@
       <ul class="work-steps__list work-list">
         <li class="work-list__item">
           <div class="work-list_icon-wrap">
-            <img src="img/svg/work-steps_icon-message.svg" alt="" class="work-list__icon" width="34.5" height="48">
+            <div class="work-list__icon">
+
+            </div>
           </div>
           <p class="work-list__title">
             Оставляете запрос
@@ -389,8 +399,9 @@
         </li>
         <li class="work-list__item">
           <div class="work-list_icon-wrap">
-            <img src="img/svg/work-steps_icon-call-center-agent.svg" alt="" class="work-list__icon" width="34.5"
-              height="48">
+            <div class="work-list__icon">
+
+            </div>
           </div>
           <p class="work-list__title">
             Консультация с нашим специалистом
@@ -401,7 +412,9 @@
         </li>
         <li class="work-list__item">
           <div class="work-list_icon-wrap">
-            <img src="img/svg/work-steps_icon-tools.svg" alt="" class="work-list__icon" width="34.5" height="48">
+            <div class="work-list__icon">
+
+            </div>
           </div>
           <p class="work-list__title">
             Монтаж оборудования
@@ -412,8 +425,9 @@
         </li>
         <li class="work-list__item">
           <div class="work-list_icon-wrap">
-            <img src="img/svg/banner_work-steps_icon-brackets.svg" alt="" class="work-list__icon" width="34.5"
-              height="48">
+            <div class="work-list__icon">
+
+            </div>
           </div>
           <p class="work-list__title">
             Комфортное использование
@@ -688,8 +702,8 @@
             <source media="(min-width: 769px)"
               srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg, img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg 2x"
               width="260" height="260">
-            <img src="img/realized-objects/realized-objects_hotel-complex-mobile-img.jpg"
-              srcset="img/realized-objects/realized-objects_hotel-complex-mobile-img@2x.jpg" alt=""
+            <img src="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg"
+              srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg" alt=""
               class="objects__image" width="232" height="232">
           </picture>
           <span class="objects__icon">UHF</span>
