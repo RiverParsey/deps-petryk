@@ -1,7 +1,6 @@
 // Page-footer style
 
 .page-footer {
-  padding-top: 60px;
   padding-bottom: 30px;
 
   @include tabletWidth {
@@ -15,6 +14,8 @@
 
 .footer-social {
   margin-bottom: 60px;
+  padding-top: 60px;
+  background: linear-gradient(180deg, #F5F6FA 0%, #FFFFFF 100%);
 
   @include tabletWidth {
     display: flex;
@@ -31,20 +32,35 @@
   }
 }
 
-.footer-social__icon {
-  display: block;
-  margin: 0 auto;
-  @include iconSize(54px, 54px);
-  @include circleRadius;
-  background-color: $basic_img-background;
-}
-
 .footer-social__link-wrap {
   text-align: center;
 
   @include tabletWidth {
     @include sizeSetter(20px, 30px);
   }
+}
+
+.footer-social__icon-link {
+  @include mainSizes(66px, 66px);
+  @include circleRadius;
+  background-color: $basic_white;
+  margin: 0 auto;
+  @include reCenterFlex;
+}
+
+.footer-social__icon {
+  @include mainSizes(40px, 40px);
+  background-image: url(../../img/svg/page-footer_site-list_icon-mail.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.footer-social__icon-adress {
+  background-image: url(../../img/svg/page-footer_icon-location.svg);
+}
+
+.footer-social__icon-phone {
+  background-image: url(../../img/svg/page-footer_site-list_icon-phone.svg);
 }
 
 .footer-social__link {
