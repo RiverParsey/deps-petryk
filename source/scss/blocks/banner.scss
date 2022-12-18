@@ -76,6 +76,7 @@
   @include circleRadius;
   background-color: #F5F6FA;
   position: relative;
+  margin-left: 10px;
 
   &::before {
     content: "";
@@ -85,8 +86,8 @@
     background-size: contain;
     background-position: center;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    left: -10px;
   }
 }
 

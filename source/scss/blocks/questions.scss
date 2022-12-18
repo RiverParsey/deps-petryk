@@ -29,9 +29,12 @@
 }
 
 .user-field__user-message {
-  background: $basic_gray-background;
+  background: linear-gradient(90deg, #FFFFFF 0.89%, #F5F6FA 100%);
+  box-shadow: 0px 15px 20px rgba(119, 122, 144, 0.08);
   border-radius: 56px;
-  box-shadow: $message_shadow;
+  margin: 0;
+  padding: 12px 12px 12px 52px;
+  position: relative;
 
   @include tabletWidth {
     @include sizeSetter(20px, 32px);
@@ -39,7 +42,24 @@
   }
 }
 
+.user-field__question-mark {
+
+  &::before {
+    content: "";
+    @include mainSizes(20px, 20px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    background: url(../../img/questions/questions_question-mark.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include circleRadius;
+  }
+}
+
 .user-field__message-text {
+  margin: 0;
   max-height: 48px;
 }
 
@@ -47,10 +67,11 @@
   @include mainSizes(45px, 45px);
   background: transparent;
   @include reCenterFlex;
+  margin-left: 62px;
 }
 
 .user-field__icon {
-  @include mainSizes(42px, 42px);
+  @include mainSizes(32px, 32px);
   background-image: url(../../img/svg/questions_icon-blue-shirtWoman.svg);
   background-size: contain;
   background-position: center;

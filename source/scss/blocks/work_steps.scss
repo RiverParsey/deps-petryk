@@ -44,6 +44,45 @@
   }
 }
 
+.work-list__icon-wrap {
+  @include mainSizes(100px, 100px);
+  @include circleRadius;
+  background-color: $basic_white;
+  box-shadow: 0px 20px 40px -15px rgba(119, 122, 144, 0.5);
+  margin: 0 auto;
+  @include reCenterFlex;
+  position: relative;
+}
+
+.work-list__icon {
+  @include mainSizes(60px, 60px);
+  background-image: url(../../img/svg/work-steps_icon-message.svg);
+  background-position: center;
+  background-size: contain;
+
+  &::before {
+    content: "";
+    @include mainSizes(30px, 30px);
+    @include circleRadius;
+    background-color: $basic_green;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.work-list__icon-callCenter {
+  background-image: url(../../img/svg/work-steps_icon-call-center-agent.svg);
+}
+
+.work-list__icon-tools {
+  background-image: url(../../img/svg/work-steps_icon-tools.svg);
+}
+
+.work-list__icon-brackets {
+  background-image: url(../../img/svg/banner_work-steps_icon-brackets.svg);
+}
+
 .work-list__title {
   text-align: center;
   align-self: center;
