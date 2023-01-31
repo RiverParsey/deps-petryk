@@ -3,7 +3,7 @@
 .realized-objects {
   @include mobilePadding;
   @include sectionPadding;
-  background: $equipment_background;
+  overflow: hidden;
 
   @include tabletWidth {
     padding: 120px 42px 60px 42px;
@@ -14,13 +14,31 @@
   }
 }
 
-.objects {
+.objects__wrapper {
+  background: linear-gradient(90deg, #F5F6FA 0%, #FFFFFF 100%);
+  background-size: cover;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  overflow: hidden;
 
   @include tabletWidth {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 20px;
+  }
+
+  @include desktopWidth {
+    max-width: 1180px;
+  }
+}
+
+.objects__wrap {
+
+  @include desktopWidth {
+    min-width: 380px;
+    min-height: auto;
+    background: $basic_white;
+    border-radius: 30px 0px;
   }
 }
 
@@ -28,13 +46,18 @@
   display: none;
 }
 
+.object__picture {
+  @include mainSizes(272px, 272px);
+  background-color: $basic_white;
+}
+
 .objects__image {
   display: block;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: $basic_img-background;
 }
 
-.objects__icon {
+/* .objects__icon {
   @include iconSize(90px, 90px);
   @include columnFlex;
   @include circleRadius;
@@ -44,7 +67,7 @@
   @include tabletWidth {
     @include mainSizes(80px, 80px);
   }
-}
+} */
 
 .objects__text {
   margin: 0;

@@ -9,18 +9,25 @@
 
   @include desktopWidth {
     padding: 120px 370px 0 370px;
+    background: none;
   }
 }
 
 .footer-social {
   margin-bottom: 60px;
   padding-top: 60px;
-  background: linear-gradient(180deg, #F5F6FA 0%, #FFFFFF 100%);
+  padding-bottom: 30px;
+  border-bottom: 2px solid #F5F6FA;
 
   @include tabletWidth {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: none;
+  }
+
+  @include desktopWidth {
+    justify-content: space-between;
   }
 }
 
@@ -46,6 +53,7 @@
   background-color: $basic_white;
   margin: 0 auto;
   @include reCenterFlex;
+  box-shadow: 0px 20px 40px -15px rgba(119, 122, 144, 0.5);
 }
 
 .footer-social__icon {

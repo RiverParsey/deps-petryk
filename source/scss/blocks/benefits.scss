@@ -21,19 +21,34 @@
     justify-content: space-between;
     gap: 20px;
   }
+
+  @include desktopWidth {
+    flex-direction: row;
+  }
 }
 
 .benefits__item {
   font-size: 14px;
   @include mainSizes(152px, auto);
+  position: relative;
 
   @include tabletWidth {
-    @include mainSizes(460px, 214px);
+    display: flex;
+    min-width: 460px;
+    min-height: 154px;
     gap: 20px;
   }
 
   @include desktopWidth {
-    @include mainSizes(280px, auto);
+    min-width: 280px;
+    min-height: 214px;
+  }
+}
+
+.benefits__wrap {
+
+  @include tabletWidth {
+    @include reCenterFlex;
   }
 }
 
@@ -43,6 +58,12 @@
   background-color: $basic_white;
   margin: 0 auto;
   @include reCenterFlex;
+  box-shadow: 0px 20px 40px -15px rgba(119, 122, 144, 0.5);
+
+  @include desktopWidth {
+    align-self: flex-start;
+    margin-top: 53px;
+  }
 }
 
 .benefits__icon {
@@ -63,10 +84,29 @@
   background-image: url(../../img/svg/banner_work-steps_icon-brackets.svg);
 }
 
-.benefits__title {
+.benefits__desk-wrap {
+
+  @include tabletWidth {
+    box-sizing: border-box;
+    max-width: 374px;
+    padding: 20px;
+  }
 
   @include desktopWidth {
+    max-width: 194px;
+    min-height: 214px;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 39px;
+  }
+}
+
+.benefits__item-title {
+
+  @include tabletWidth {
     @include sizeSetter(20px, 30px);
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -74,7 +114,28 @@
   @include sizeSetter(13px, 22.1px);
   color: $basic_text-transparent;
 
+  @include tabletWidth {
+    @include sizeSetter(16px, 27.2px);
+    margin: 0;
+  }
+
   @include desktopWidth {
     @include sizeSetter(1rem, 27.2px);
+  }
+}
+
+.benefits__circle {
+  @include mainSizes(127px, 127px);
+  @include circleRadius;
+    background: linear-gradient(135deg, #F5F6FA 0%, #FFFFFF 100%);
+    position: absolute;
+    top: 33px;
+    left: 13px;
+    z-index: -999;
+
+  @include tabletWidth {
+    @include mainSizes(154px, 154px);
+    top: 0;
+    left: 33px;
   }
 }

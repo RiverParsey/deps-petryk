@@ -105,7 +105,7 @@
                 </a>
               </li>
             </ul>
-            <button class="button tablet-desktop__price">Узнать цену</button>
+            <button class="button tablet-desktop__price">Узнать&nbsp;цену</button>
           </div>
         </div>
       </nav>
@@ -114,36 +114,44 @@
     <main class="page__main">
 
       <section class="banner">
-        <h2 class="banner__title">Парковочные решения</h2>
-        <p class="banner__subtitle">для жилых комплексов</p>
-        <ul class="banner__list">
-          <li class="banner__item">
-            <div class="banner__icon-wrap banner__icon-wrap-brackets">
+        <div class="banner__wrapper">
+          <div class="banner-wrap">
+            <h2 class="banner__title">Парковочные решения</h2>
+            <p class="banner__subtitle">для жилых комплексов</p>
+            <ul class="banner__list">
+              <li class="banner__item">
+                <div class="banner__icon-wrap banner__icon-wrap-brackets">
+                </div>
+                <p class="banner__description">Контроль проезда автомобилей</p>
+              </li>
+              <li class="banner__item">
+                <div class="banner__icon-wrap banner__icon-wrap-thumb">
+                </div>
+                <p class="banner__description">Безопасность на территории</p>
+              </li>
+              <li class="banner__item">
+                <div class="banner__icon-wrap banner__icon-wrap-cogwheel">
+                </div>
+                <p class="banner__description">Полная автоматизация проезда</p>
+              </li>
+            </ul>
+            <button class="button banner__consultation-button">Получить консультацию</button>
+          </div>
+          <div class="banner__picture-wrap">
+            <div class="banner__picture">
+              <picture>
+                <source media="(min-width: 1920px)"
+                  srcset="img/banner/banner_desktop-image.png, img/banner/banner_desktop-image@2x.png 2x" width="654"
+                  height="530" class="banner__image-desktop">
+                <source media="(min-width: 769px)"
+                  srcset="img/banner/banner_tablet-image.png, img/banner/banner_tablet-image@2x.png 2x" width="440"
+                  height="357" class="banner__image-tablet">
+                <img src="img/banner/banner-mobile_image.jpg" srcset="img/banner/banner-mobile_image@2x.jpg 2x" alt=""
+                  class="banner__image" width="328" height="267">
+              </picture>
             </div>
-            <p class="banner__description">Контроль проезда автомобилей</p>
-          </li>
-          <li class="banner__item">
-            <div class="banner__icon-wrap banner__icon-wrap-thumb">
-            </div>
-            <p class="banner__description">Безопасность на территории</p>
-          </li>
-          <li class="banner__item">
-            <div class="banner__icon-wrap banner__icon-wrap-cogwheel">
-            </div>
-            <p class="banner__description">Полная автоматизация проезда</p>
-          </li>
-        </ul>
-        <button class="button banner__consultation-button">Получить консультацию</button>
-        <picture>
-          <source media="(min-width: 1920px)"
-            srcset="img/banner/banner_desktop-image.jpg, img/banner/banner_desktop-image@2x.jpg 2x" width="654"
-            height="530" class="banner__image-desktop">
-          <source media="(min-width: 769px)"
-            srcset="img/banner/banner_tablet-image.jpg, img/banner/banner_tablet-image@2x.jpg 2x" width="440"
-            height="357" class="banner__image-tablet">
-          <img src="img/banner/banner-mobile_image.jpg" srcset="img/banner/banner-mobile_image@2x.jpg 2x" alt=""
-            class="banner__image" width="328" height="267">
-        </picture>
+          </div>
+        </div>
       </section>
 
       <section class="questions">
@@ -195,17 +203,19 @@
               </div>
             </div>
           </li>
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/questions/questions_desktop-img.jpg, img/questions/questions_desktop-img@2x.jpg 2x"
-              width="380" height="630">
-            <source media="(min-width: 769px)"
-              srcset="img/questions/questions_city-tablet-img.jpg, img/questions/questions_city-tablet-img@2x.jpg"
-              width="380" height="630">
-            <img src="img/questions/questions_city-mobile-img.jpg"
-              srcset="img/questions/questions_city-mobile-img@2x.jpg" alt="" class="questions__image" width="328"
-              height="436">
-          </picture>
+          <div class="questions__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/questions/questions_desktop-img.jpg, img/questions/questions_desktop-img@2x.jpg 2x"
+                width="380" height="630">
+              <source media="(min-width: 769px)"
+                srcset="img/questions/questions_city-tablet-img.jpg, img/questions/questions_city-tablet-img@2x.jpg 2x"
+                width="380" height="630">
+              <img src="img/questions/questions_city-mobile-img.jpg"
+                srcset="img/questions/questions_city-mobile-img@2x.jpg 2x" alt="" class="questions__image" width="328"
+                height="436">
+            </picture>
+          </div>
           <li class="questions__description">
             <p class="questions__text">
               Большинство (78,5%) представителей жилых комплексов не знают, какое парковочное решение оптимально
@@ -223,41 +233,61 @@
 
         <ul class="benefits__list">
           <li class="benefits__item">
-            <div class="benefits__icon-wrap">
-              <div class="benefits__icon benefits__icon-manager">
+            <div class="benefits__wrap">
+              <div class="benefits__icon-wrap">
+                <div class="benefits__icon benefits__icon-manager">
 
+                </div>
               </div>
+              <div class="benefits__desk-wrap">
+                <h3 class="benefits__item-title">Индивидуально</h3>
+                <p class="benefits__subtitle">Широкий выбор решений под ваши необходимости</p>
+              </div>
+              <div class="benefits__circle"></div>
             </div>
-            <h3 class="benefits__item-title">Индивидуально</h3>
-            <p class="benefits__subtitle">Широкий выбор решений под ваши необходимости</p>
           </li>
           <li class="benefits__item">
-            <div class="benefits__icon-wrap">
-              <div class="benefits__icon benefits__icon-key">
+            <div class="benefits__wrap">
+              <div class="benefits__icon-wrap">
+                <div class="benefits__icon benefits__icon-key">
 
+                </div>
               </div>
+              <div class="benefits__desk-wrap">
+                <h3 class="benefits__item-title">Удобно</h3>
+                <p class="benefits__subtitle">Реализация проекта под ключ</p>
+              </div>
+              <div class="benefits__circle"></div>
             </div>
-            <h3 class="benefits__item-title">Удобно</h3>
-            <p class="benefits__subtitle">Реализация проекта под ключ</p>
           </li>
           <li class="benefits__item">
-            <div class="benefits__icon-wrap">
-              <div class="benefits__icon benefits__icon-cogwheel">
+            <div class="benefits__wrap">
+              <div class="benefits__icon-wrap">
+                <div class="benefits__icon benefits__icon-cogwheel">
 
+                </div>
               </div>
+              <div class="benefits__desk-wrap">
+                <h3 class="benefits__item-title">Профессионально</h3>
+                <p class="benefits__subtitle">Выбор, установка, настройка и запуск парковки в вашем ЖК нашими опытными
+                  инженерами</p>
+              </div>
+              <div class="benefits__circle"></div>
             </div>
-            <h3 class="benefits__item-title">Профессионально</h3>
-            <p class="benefits__subtitle">Выбор, установка, настройка и запуск парковки в вашем ЖК нашими опытными
-              инженерами</p>
           </li>
           <li class="benefits__item">
-            <div class="benefits__icon-wrap">
-              <div class="benefits__icon benefits__icon-achievement">
+            <div class="benefits__wrap">
+              <div class="benefits__icon-wrap">
+                <div class="benefits__icon benefits__icon-achievement">
 
+                </div>
               </div>
+              <div class="benefits__desk-wrap">
+                <h3 class="benefits__item-title">Надежно</h3>
+                <p class="benefits__subtitle">Гарантия на парковочную систему - 12 месяцев</p>
+              </div>
+              <div class="benefits__circle"></div>
             </div>
-            <h3 class="benefits__item-title">Надежно</h3>
-            <p class="benefits__subtitle">Гарантия на парковочную систему - 12 месяцев</p>
           </li>
         </ul>
       </section>
@@ -269,14 +299,16 @@
         <div class="solutions__product-cards cards">
           <div class="cards__product-card product-card">
             <div class="product-card__wrap">
-              <picture>
-                <source media="(min-width: 769px)"
-                  srcset="img/solutions/solutions_base-tablet-card-img.jpg, img/solutions/solutions_base-tablet-card-img@2x.jpg 2x"
-                  width="330" height="300">
-                <img src="img/solutions/solutions_base-mobile-card-img.jpg"
-                  srcset="img/solutions/solutions_base-mobile-card-img@2x.jpg" alt="" class="product-card__pic"
-                  width="264" height="240">
-              </picture>
+              <div class="product-card__picture-wrap">
+                <picture>
+                  <source media="(min-width: 769px)"
+                    srcset="img/solutions/solutions_base-tablet-card-img.png, img/solutions/solutions_base-tablet-card-img@2x.png 2x"
+                    width="330" height="300">
+                  <img src="img/solutions/solutions_base-mobile-card-img.png"
+                    srcset="img/solutions/solutions_base-mobile-card-img@2x.png 2x" alt="" class="product-card__pic"
+                    width="264" height="240">
+                </picture>
+              </div>
               <div class="product-card__outer-circle">
                 <div class="product-card__inner-circle">
                   <span class="product-card__icon"></span>
@@ -299,7 +331,9 @@
               </div>
               <div class="product-card__price card-price">
                 <div class="card-price__title">
-                  <span class="card-price__older">от 1500$</span><span class="card-price__current">от 800$</span>
+                  <div class="card-price__price">
+                    <span class="card-price__older">от 1500$</span><span class="card-price__current">от 800$</span>
+                  </div>
                   <p class="card-price__description">*без учета стоимости работы</p>
                 </div>
                 <div class="card-price__order price-button">
@@ -311,14 +345,16 @@
         </div>
         <div class="cards__product-card product-card">
           <div class="product-card__wrap">
-            <picture>
-              <source media="(min-width: 769px)"
-                srcset="img/solutions/solutions_standard-tablet-card-img.jpg, img/solutions/solutions_standard-tablet-card-img@2x.jpg 2x"
-                width="330" height="300">
-              <img src="img/solutions/solutions_standard-mobile-card-img.jpg"
-                srcset="img/solutions/solutions_standard-mobile-card-img@2x.jpg 2x" alt="" class="product-card__pic"
-                width="264" height="240">
-            </picture>
+            <div class="product-card__picture-wrap">
+              <picture>
+                <source media="(min-width: 769px)"
+                  srcset="img/solutions/solutions_standard-tablet-card-img.png, img/solutions/solutions_standard-tablet-card-img@2x.png 2x"
+                  width="330" height="300">
+                <img src="img/solutions/solutions_standard-mobile-card-img.png"
+                  srcset="img/solutions/solutions_standard-mobile-card-img@2x.png 2x" alt="" class="product-card__pic"
+                  width="264" height="240">
+              </picture>
+            </div>
             <div class="product-card__outer-circle">
               <div class="product-card__inner-circle">
                 <span class="product-card__icon"></span>
@@ -341,7 +377,9 @@
             </div>
             <div class="product-card__price card-price">
               <div class="card-price__title">
-                <span class="card-price__older">от 2100$</span><span class="card-price__current">от 1400$</span>
+                <div class="card-price__price">
+                  <span class="card-price__older">от 2100$</span><span class="card-price__current">от 1400$</span>
+                </div>
                 <p class="card-price__description">*без учета стоимости работы</p>
               </div>
               <div class="card-price__order price-button">
@@ -350,327 +388,347 @@
             </div>
           </div>
         </div>
+        <div class="cards__product-card product-card">
+          <div class="product-card__wrap">
+            <div class="product-card__picture-wrap">
+              <picture>
+                <source media="(min-width: 769px)"
+                  srcset="img/solutions/solutions_advanced-tablet-card-img.png. img/solutions/solutions_advanced-tablet-card-img@2x.png 2x"
+                  width="330" height="300">
+                <img src="img/solutions/solutions_advanced-mobile-card-img.png"
+                  srcset="img/solutions/solutions_advanced-mobile-card-img@2x.png 2x" alt="" class="product-card__pic"
+                  width="264" height="240">
+              </picture>
+            </div>
+            <div class="product-card__outer-circle">
+              <div class="product-card__inner-circle">
+                <span class="product-card__icon"></span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__info-wrap">
+            <div class="product-card__content-wrap">
+              <h3 class="product-card__title">Комплект Продвинутый</h3>
+              <p class="product-card__description">Проезд на территорию осуществляется при считывании специальной
+                метки
+                расположенной на автомобиле (UHF)</p>
+              <ul class="product-card__list">
+                <li class="product-card__item">Шлагбаум</li>
+                <li class="product-card__item">Радар для обнаружения авто</li>
+                <li class="product-card__item">Контроллер индукционной (магнитной)</li>
+                <li class="product-card__item">Монтажный комплект</li>
+                <li class="product-card__item product-card__item--bolder">UHF-считыватель уличный</li>
+                <li class="product-card__item product-card__item--bolder">Считыватель настольный UHF</li>
+                <li class="product-card__item product-card__item--bolder">Бессконтактные UHF метки</li>
+              </ul>
+            </div>
+            <div class="product-card__price card-price">
+              <div class="card-price__title">
+                <div class="card-price__price">
+                  <span class="card-price__older">от 2400$</span><span class="card-price__current">от 1600$</span>
+                </div>
+                <p class="card-price__description">*без учета стоимости работы</p>
+              </div>
+              <div class="card-price__order price-button">
+                <a href="#" class="button price-button__order-button">Купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-steps">
+        <h2 class="work-step__title visually-hidden">Как мы работаем?</h2>
+        <span class="tip">Как мы работаем</span>
+        <h2 class="tip__title">Этапы работ</h2>
+        <div class="work-steps__wrap ">
+          <ul class="work-steps__list work-list">
+            <li class="work-list__item">
+              <div class="work-list__icon-wrap">
+                <div class="work-list__icon work-list__icon-message">
+
+                </div>
+              </div>
+              <p class="work-list__title">
+                Оставляете запрос
+              </p>
+              <p class="work-list__description">
+                Это бесплатно
+              </p>
+              <!-- <div class="work-steps__decorative-line">
+                <hr class="work-steps__line"/>
+              </div> -->
+            </li>
+            <li class="work-list__item">
+              <div class="work-list__icon-wrap">
+                <div class="work-list__icon work-list__icon-callCenter">
+
+                </div>
+              </div>
+              <p class="work-list__title">
+                Консультация с нашим специалистом
+              </p>
+              <p class="work-list__description">
+                Это тоже абсолютно бесплатно
+              </p>
+              <!-- <div class="work-steps__decorative-line">
+                <hr class="work-steps__line"/>
+              </div> -->
+            </li>
+            <li class="work-list__item">
+              <div class="work-list__icon-wrap">
+                <div class="work-list__icon work-list__icon-tools">
+
+                </div>
+              </div>
+              <p class="work-list__title">
+                Монтаж оборудования
+              </p>
+              <p class="work-list__description">
+                Зависит от стоимости расчета
+              </p>
+             <!--  <div class="work-steps__decorative-line">
+                <hr class="work-steps__line"/>
+              </div> -->
+            </li>
+            <li class="work-list__item">
+              <div class="work-list__icon-wrap">
+                <div class="work-list__icon work-list__icon-brackets">
+
+                </div>
+              </div>
+              <p class="work-list__title">
+                Комфортное использование
+              </p>
+              <p class="work-list__description">
+                Выше вложенных средств
+              </p>
+              <!-- <div class="work-steps__decorative-line">
+                <hr class="work-steps__line"/>
+              </div> -->
+            </li>
+          </ul>
+          <div class="work-list__order work-list__button">
+            <button href="#" class="button work-list__order-button">Расчитать стоимость</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment">
+        <h2 class="equipment__title visually-hidden">Наше оборудование</h2>
+        <span class="tip">Лучшее</span>
+        <h2 class="tip__title">Оборудование</h2>
+        <div class="equipment__cards">
+          <div class="equipment__wrap">
+            <div class="equipment__grid-wrap">
+              <div class="equipment__item equipment__item--0">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_barrier-desktop-img.png, img/equipment/equipment_barrier-desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_barrier-tablet-img.png, img/equipment/equipment_barrier-tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_barrier-mobile-img.png"
+                      srcset="img/equipment/equipment_barrier-mobile-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">BG1060</p>
+                  <p class="equipment__subtitle">
+                    современный шлагбаум с интерактивной световой индикацией, высокоэффективный бесщеточный двигатель
+                    постоянного тока с ресурсом открытий не менее 3 000 000 циклов
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--a">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_gsm-controller-desktop-img.png, img/equipment/equipment_gsm-controller-desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_gsm-controller-tablet-img.png, img/equipment/equipment_gsm-controller-tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_gsm-controller-mobile-img.png"
+                      srcset="img/equipment/equipment_gsm-controller-mobile-img@2x.png 2x" alt=""
+                      class="equipment__image" width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">GSM-контроллер RC-4000</p>
+                  <p class="equipment__subtitle">
+                    служит сердцем системы и позволяет осуществить заезд на территорию по нескольким сценариям
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--b">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_VR10_desktop-img.png, img/equipment/equipment_VR10_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_VR10_tablet-img.png, img/equipment/equipment_VR10_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_VR10_mobile-img.png"
+                      srcset="img/equipment/equipment_VR10_mobile-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">VR10</p>
+                  <p class="equipment__subtitle">
+                    радар для обнаружения транспортных средств, который обезопасит проезд транспорта под стрелой.
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--c">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_PSA02_desktop-img.png, img/equipment/equipment_PSA02_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_PSA02_tablet-img.png, img/equipment/equipment_PSA02_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_PSA02_mobile-img.png"
+                      srcset="img/equipment/equipment_PSA02_mobile-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">PSA02 + PSA03</p>
+                  <p class="equipment__subtitle">
+                    петлевой детектор, служит для выезда любого транспорта из охраняемой территории
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="equipment__wrapper">
+              <div class="equipment__item equipment__item--d">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_DL85_desktop-img.png, img/equipment/equipment_DL85_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_DL85_tablet-img.png, img/equipment/equipment_DL85_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_DL85_tablet-img.png"
+                      srcset="img/equipment/equipment_DL85_tablet-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">DL-852Q28B-LP</p>
+                  <p class="equipment__subtitle">
+                    камера которая способна распознать автомобильные номерные знаки и осуществить пропуск
+                    зарегистрированных
+                    автомобилей на контролируемую территорию. Управление базой данных номерных знаков осуществляется с
+                    WEB
+                    интерфейса устройства
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--e">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_atlas-desktop-img.png, img/equipment/equipment_atlas-desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_atlas-tablet-img.png, img/equipment/equipment_atlas-tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_atlas-tablet-img.png"
+                      srcset="img/equipment/equipment_atlas-tablet-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">Atlas 100</p>
+                  <p class="equipment__subtitle">
+                    контроллер с WEB интерфейсом, которым можно управлять с любого устройства. Позволяет гибко настроить
+                    систему
+                    пропуска и сохраняет у себя на борту ключи и события происходящего
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item  equipment__item--f">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_UHF10_desktop-img.png, img/equipment/equipment_UHF10_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_UHF10_tablet-img.png, img/equipment/equipment_UHF10_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_UHF10_tablet-img.png"
+                      srcset="img/equipment/equipment_UHF10_tablet-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">UHF-10E PRO</p>
+                  <p class="equipment__subtitle">
+                    антенна с возможностью считывания ключей на расстоянии до 10 метров. Позволит осуществлять допуск на
+                    объект
+                    без необходимости остановки транспортного средства.
+                  </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--g">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_UR10_desktop-img.png, img/equipment/equipment_UR10_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_UR10_tablet-img.png, img/equipment/equipment_UR10_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_UR10_tablet-img.png"
+                      srcset="img/equipment/equipment_UR10_tablet-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">UR10RW-E</p>
+                  <p class="equipment__subtitle">
+                    настольный регистратор ключей, который позволяет добавлять новых пользователей в систему не выходя
+                    из
+                    помещения </p>
+                </div>
+              </div>
+              <div class="equipment__item equipment__item--h">
+                <div class="equipment__picture">
+                  <picture>
+                    <source media="(min-width: 1920px)"
+                      srcset="img/equipment/equipment_RFID_desktop-img.png, img/equipment/equipment_RFID_desktop-img@2x.png 2x"
+                      width="260" height="260">
+                    <source media="(min-width: 769px)"
+                      srcset="img/equipment/equipment_RFID_tablet-img.png, img/equipment/equipment_RFID_tablet-img@2x.png 2x"
+                      width="210" height="210">
+                    <img src="img/equipment/equipment_RFID_tablet-img.png"
+                      srcset="img/equipment/equipment_RFID_tablet-img@2x.png 2x" alt="" class="equipment__image"
+                      width="120" height="120">
+                  </picture>
+                </div>
+                <div class="equipment__description">
+                  <p class="equipment__title">RFID Stick UHF</p>
+                  <p class="equipment__subtitle">
+                    ключ-наклейка, которая крепится на лобовом стекле автомобиля для распознавания системой свой-чужой.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="equipment__show-more show-more">
+          <a href="#" class="show-more__link">Показать еще</a>
+        </div>
+        <a href="#" class="equipment__price-button button">Расчитать стоимость</a>
   </div>
-  <div class="cards__product-card product-card">
-    <div class="product-card__wrap">
-      <picture>
-        <source media="(min-width: 769px)"
-          srcset="img/solutions/solutions_advanced-tablet-card-img.jpg. img/solutions/solutions_advanced-tablet-card-img@2x.jpg"
-          width="330" height="300">
-        <img src="img/solutions/solutions_advanced-mobile-card-img.jpg"
-          srcset="img/solutions/solutions_advanced-mobile-card-img@2x.jpg 2x" alt="" class="product-card__pic"
-          width="264" height="240">
-      </picture>
-      <div class="product-card__outer-circle">
-        <div class="product-card__inner-circle">
-          <span class="product-card__icon"></span>
-        </div>
-      </div>
-    </div>
-    <div class="product-card__info-wrap">
-      <div class="product-card__content-wrap">
-        <h3 class="product-card__title">Комплект Продвинутый</h3>
-        <p class="product-card__description">Проезд на территорию осуществляется при считывании специальной
-          метки
-          расположенной на автомобиле (UHF)</p>
-        <ul class="product-card__list">
-          <li class="product-card__item">Шлагбаум</li>
-          <li class="product-card__item">Радар для обнаружения авто</li>
-          <li class="product-card__item">Контроллер индукционной (магнитной)</li>
-          <li class="product-card__item">Монтажный комплект</li>
-          <li class="product-card__item product-card__item--bolder">UHF-считыватель уличный</li>
-          <li class="product-card__item product-card__item--bolder">Считыватель настольный UHF</li>
-          <li class="product-card__item product-card__item--bolder">Бессконтактные UHF метки</li>
-        </ul>
-      </div>
-      <div class="product-card__price card-price">
-        <div class="card-price__title">
-          <span class="card-price__older">от 2400$</span><span class="card-price__current">от 1600$</span>
-          <p class="card-price__description">*без учета стоимости работы</p>
-        </div>
-        <div class="card-price__order price-button">
-          <a href="#" class="button price-button__order-button">Купить</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </section>
-
-  <section class="work-steps">
-    <h2 class="work-step__title visually-hidden">Как мы работаем?</h2>
-    <span class="tip">Как мы работаем</span>
-    <h2 class="tip__title">Этапы работ</h2>
-    <div class="work-steps__wrap ">
-      <ul class="work-steps__list work-list">
-        <li class="work-list__item">
-          <div class="work-list__icon-wrap">
-            <div class="work-list__icon work-list__icon-message">
-
-            </div>
-          </div>
-          <p class="work-list__title">
-            Оставляете запрос
-          </p>
-          <p class="work-list__description">
-            Это бесплатно
-          </p>
-        </li>
-        <li class="work-list__item">
-          <div class="work-list__icon-wrap">
-            <div class="work-list__icon work-list__icon-callCenter">
-
-            </div>
-          </div>
-          <p class="work-list__title">
-            Консультация с нашим специалистом
-          </p>
-          <p class="work-list__description">
-            Это тоже абсолютно бесплатно
-          </p>
-        </li>
-        <li class="work-list__item">
-          <div class="work-list__icon-wrap">
-            <div class="work-list__icon work-list__icon-tools">
-
-            </div>
-          </div>
-          <p class="work-list__title">
-            Монтаж оборудования
-          </p>
-          <p class="work-list__description">
-            Зависит от стоимости расчета
-          </p>
-        </li>
-        <li class="work-list__item">
-          <div class="work-list__icon-wrap">
-            <div class="work-list__icon work-list__icon-brackets">
-
-            </div>
-          </div>
-          <p class="work-list__title">
-            Комфортное использование
-          </p>
-          <p class="work-list__description">
-            Выше вложенных средств
-          </p>
-        </li>
-      </ul>
-      <div class="work-list__order work-list__button">
-        <button href="#" class="button work-list__order-button">Расчитать стоимость</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="equipment">
-    <h2 class="equipment__title visually-hidden">Наше оборудование</h2>
-    <span class="tip">Лучшее</span>
-    <h2 class="tip__title">Оборудование</h2>
-    <div class="equipment__cards">
-      <div class="equipment__wrap">
-        <div class="equipment__item equipment__item--0">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_barrier-desktop-img.jpg, img/equipment/equipment_barrier-desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_barrier-tablet-img.jpg, img/equipment/equipment_barrier-tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_barrier-mobile-img.jpg"
-                srcset="img/equipment/equipment_barrier-mobile-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">BG1060</p>
-            <p class="equipment__subtitle">
-              современный шлагбаум с интерактивной световой индикацией, высокоэффективный бесщеточный двигатель
-              постоянного тока с ресурсом открытий не менее 3 000 000 циклов
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment__item--a">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_gsm-controller-desktop-img.jpg, img/equipment/equipment_gsm-controller-desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_gsm-controller-tablet-img.jpg, img/equipment/equipment_gsm-controller-tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_gsm-controller-mobile-img.jpg"
-                srcset="img/equipment/equipment_gsm-controller-mobile-img@2x.jpg" alt="" class="equipment__image"
-                width="120" height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">GSM-контроллер RC-4000</p>
-            <p class="equipment__subtitle">
-              служит сердцем системы и позволяет осуществить заезд на территорию по нескольким сценариям
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment-item--b">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_VR10_desktop-img.jpg, img/equipment/equipment_VR10_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_VR10_tablet-img.jpg, img/equipment/equipment_VR10_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_VR10_mobile-img.jpg"
-                srcset="img/equipment/equipment_VR10_mobile-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">VR10</p>
-            <p class="equipment__subtitle">
-              радар для обнаружения транспортных средств, который обезопасит проезд транспорта под стрелой.
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment__item--c">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_PSA02_desktop-img.jpg, img/equipment/equipment_PSA02_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_PSA02_tablet-img.jpg, img/equipment/equipment_PSA02_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_PSA02_mobile-img.jpg"
-                srcset="img/equipment/equipment_PSA02_mobile-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">PSA02 + PSA03</p>
-            <p class="equipment__subtitle">
-              петлевой детектор, служит для выезда любого транспорта из охраняемой территории
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment__item--d">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_DL85_desktop-img.jpg, img/equipment/equipment_DL85_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_DL85_tablet-img.jpg, img/equipment/equipment_DL85_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_DL85_tablet-img.jpg"
-                srcset="img/equipment/equipment_DL85_tablet-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">DL-852Q28B-LP</p>
-            <p class="equipment__subtitle">
-              камера которая способна распознать автомобильные номерные знаки и осуществить пропуск зарегистрированных
-              автомобилей на контролируемую территорию. Управление базой данных номерных знаков осуществляется с WEB
-              интерфейса устройства
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="equipment__wrapper">
-        <div class="equipment__item equipment__item--e">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_atlas-desktop-img.jpg, img/equipment/equipment_atlas-desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_atlas-tablet-img.jpg, img/equipment/equipment_atlas-tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_atlas-tablet-img.jpg"
-                srcset="img/equipment/equipment_atlas-tablet-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">Atlas 100</p>
-            <p class="equipment__subtitle">
-              контроллер с WEB интерфейсом, которым можно управлять с любого устройства. Позволяет гибко настроить
-              систему
-              пропуска и сохраняет у себя на борту ключи и события происходящего
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item  equipment__item--f">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_UHF10_desktop-img.jpg, img/equipment/equipment_UHF10_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_UHF10_tablet-img.jpg, img/equipment/equipment_UHF10_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_UHF10_tablet-img.jpg"
-                srcset="img/equipment/equipment_UHF10_tablet-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">UHF-10E PRO</p>
-            <p class="equipment__subtitle">
-              антенна с возможностью считывания ключей на расстоянии до 10 метров. Позволит осуществлять допуск на
-              объект
-              без необходимости остановки транспортного средства.
-            </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment__item--g">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_UR10_desktop-img.jpg, img/equipment/equipment_UR10_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_UR10_tablet-img.jpg, img/equipment/equipment_UR10_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_UR10_tablet-img.jpg"
-                srcset="img/equipment/equipment_UR10_tablet-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">UR10RW-E</p>
-            <p class="equipment__subtitle">
-              настольный регистратор ключей, который позволяет добавлять новых пользователей в систему не выходя из
-              помещения </p>
-          </div>
-        </div>
-        <div class="equipment__item equipment__item--h">
-          <div class="equipment__picture">
-            <picture>
-              <source media="(min-width: 1920px)"
-                srcset="img/equipment/equipment_RFID_desktop-img.jpg, img/equipment/equipment_RFID_desktop-img@2x.jpg 2x"
-                width="260" height="260">
-              <source media="(min-width: 769px)"
-                srcset="img/equipment/equipment_RFID_tablet-img.jpg, img/equipment/equipment_RFID_tablet-img@2x.jpg 2x"
-                width="210" height="210">
-              <img src="img/equipment/equipment_RFID_tablet-img.jpg"
-                srcset="img/equipment/equipment_RFID_tablet-img@2x.jpg" alt="" class="equipment__image" width="120"
-                height="120">
-            </picture>
-          </div>
-          <div class="equipment__description">
-            <p class="equipment__title">RFID Stick UHF</p>
-            <p class="equipment__subtitle">
-              ключ-наклейка, которая крепится на лобовом стекле автомобиля для распознавания системой свой-чужой.
-          </div>
-        </div>
-      </div>
-      <div class="equipment__show-more show-more">
-        <a href="#" class="show-more__link">Показать еще</a>
-      </div>
-      <a href="#" class="equipment__price-button button">Расчитать стоимость</a>
-    </div>
   </section>
 
   <section class="realized-objects">
@@ -678,90 +736,87 @@
     <span class="tip">Наши</span>
     <h2 class="tip__title">Реализованные объекты</h2>
     <div class="realized-objects__body objects">
-      <div class="objects__wrap">
-        <div class="objects__picture">
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
-              width="340" height="340">
-            <source media="(min-width: 769px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
-              width="260" height="260">
-            <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
-              srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg" alt=""
-              class="objects__image" width="232" height="232">
-          </picture>
-          <span class="objects__icon">UHF</span>
+      <div class="objects__wrapper">
+        <div class="objects__wrap">
+          <div class="objects__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
+                width="340" height="340">
+              <source media="(min-width: 769px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
+                width="260" height="260">
+              <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
+                srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg 2x" alt=""
+                class="objects__image" width="232" height="232">
+            </picture>
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
         </div>
-        <p class="objects__text">Жилой комплекс</p>
-      </div>
-      <div class="objects__wrap">
-        <div class="objects__picture">
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/realized-objects/realized-objects_private-kindergarten-desktop-img.jpg, img/realized-objects/realized-objects_private-kindergarten-desktop-img@2x.jpg 2x"
-              width="340" height="340">
-            <source media="(min-width: 769px)"
-              srcset="img/realized-objects/realized-objects_private-kindergarten-tablet-img.jpg, img/realized-objects/realized-objects_private-kindergarten-tablet-img@2x.jpg 2x"
-              width="260" height="260">
-            <img src="img/realized-objects/realized-objects_private-kindergarten-tablet-img.jpg"
-              srcset="img/realized-objects/realized-objects_private-kindergarten-tablet-img@2x.jpg" alt=""
-              class="objects__image" width="232" height="232">
-          </picture>
-          <span class="objects__icon">UHF</span>
+        <div class="objects__wrap">
+          <div class="objects__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/realized-objects/realized-objects_private-kindergarten-desktop-img.jpg, img/realized-objects/realized-objects_private-kindergarten-desktop-img@2x.jpg 2x"
+                width="340" height="340">
+              <source media="(min-width: 769px)"
+                srcset="img/realized-objects/realized-objects_private-kindergarten-tablet-img.jpg, img/realized-objects/realized-objects_private-kindergarten-tablet-img@2x.jpg 2x"
+                width="260" height="260">
+              <img src="img/realized-objects/realized-objects_private-kindergarten-tablet-img.jpg"
+                srcset="img/realized-objects/realized-objects_private-kindergarten-tablet-img@2x.jpg 2x" alt=""
+                class="objects__image" width="232" height="232">
+            </picture>
+          </div>
+          <p class="objects__text">Частный детский сад</p>
         </div>
-        <p class="objects__text">Частный детский сад</p>
-      </div>
-      <div class="objects__wrap">
-        <div class="objects__picture">
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/realized-objects/realized-objects_hotel-complex-desktop-img.jpg, img/realized-objects/realized-objects_hotel-complex-desktop-img@2x.jpg 2x"
-              width="340" height="340">
-            <source media="(min-width: 769px)"
-              srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg, img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg 2x"
-              width="260" height="260">
-            <img src="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg"
-              srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg" alt=""
-              class="objects__image" width="232" height="232">
-          </picture>
-          <span class="objects__icon">UHF</span>
+        <div class="objects__wrap">
+          <div class="objects__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/realized-objects/realized-objects_hotel-complex-desktop-img.png, img/realized-objects/realized-objects_hotel-complex-desktop-img@2x.png 2x"
+                width="340" height="340">
+              <source media="(min-width: 769px)"
+                srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg, img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg 2x"
+                width="260" height="260">
+              <img src="img/realized-objects/realized-objects_hotel-complex-tablet-img.jpg"
+                srcset="img/realized-objects/realized-objects_hotel-complex-tablet-img@2x.jpg 2x" alt=""
+                class="objects__image" width="232" height="232">
+            </picture>
+          </div>
+          <p class="objects__text">Отельный комплекс</p>
         </div>
-        <p class="objects__text">Отельный комплекс</p>
-      </div>
-      <div class="objects__wrap objects__wrap--disabled">
-        <div class="objects__picture">
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
-              width="340" height="340">
-            <source media="(min-width: 769px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
-              width="260" height="260">
-            <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
-              srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg" alt=""
-              class="objects__image" width="232" height="232">
-          </picture>
-          <span class="objects__icon">UHF</span>
+        <div class="objects__wrap">
+          <div class="objects__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
+                width="340" height="340">
+              <source media="(min-width: 769px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
+                width="260" height="260">
+              <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
+                srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg 2x" alt=""
+                class="objects__image" width="232" height="232">
+            </picture>
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
         </div>
-        <p class="objects__text">Жилой комплекс</p>
-      </div>
-      <div class="objects__wrap objects__wrap--disabled">
-        <div class="objects__picture">
-          <picture>
-            <source media="(min-width: 1920px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
-              width="340" height="340">
-            <source media="(min-width: 769px)"
-              srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
-              width="260" height="260">
-            <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
-              srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg" alt=""
-              class="objects__image" width="232" height="232">
-          </picture>
-          <span class="objects__icon">UHF</span>
+        <div class="objects__wrap">
+          <div class="objects__picture">
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-desktop-img.jpg, img/realized-objects/realized-objects_residential-complex-desktop-img@2x.jpg 2x"
+                width="340" height="340">
+              <source media="(min-width: 769px)"
+                srcset="img/realized-objects/realized-objects_residential-complex-tablet-img.jpg, img/realized-objects/realized-objects_residential-complex-tablet-img@2x.jpg 2x"
+                width="260" height="260">
+              <img src="img/realized-objects/realized-objects_residential-complex-mobile-img.jpg"
+                srcset="img/realized-objects/realized-objects_residential-complex-mobile-img@2x.jpg 2x" alt=""
+                class="objects__image" width="232" height="232">
+            </picture>
+          </div>
+          <p class="objects__text">Жилой комплекс</p>
         </div>
-        <p class="objects__text">Жилой комплекс</p>
       </div>
     </div>
     <div class="toggles__wrap">
