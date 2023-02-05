@@ -77,6 +77,30 @@
   padding: 12px 12px 12px 52px;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 12px;
+    min-height: 12px;
+    @include circleRadius;
+    bottom: -8px;
+    left: 30px;
+    background-color: #009A44;
+    opacity: 0.5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 8px;
+    min-height: 8px;
+    @include circleRadius;
+    bottom: -17px;
+    left: 40px;
+    background-color: #009A44;
+    opacity: 0.25;
+  }
+
   @include tabletWidth {
     @include sizeSetter(20px, 32px);
     max-width: 604px;
