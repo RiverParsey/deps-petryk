@@ -63,8 +63,20 @@ ol {
 .tip {
   @include tipFont;
   margin: 0;
-  padding-left: 25px;
+  padding-left: 35px;
   color: $basic_green;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 1px;
+    background-color: $basic_green;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
 
   @include tabletWidth {
     @include sizeSetter(18px, 28.8px);

@@ -132,7 +132,7 @@
   @include mainSizes(45px, 45px);
   background: transparent;
   @include reCenterFlex;
-  margin-left: 62px;
+  margin-left: 50px;
 }
 
 .user-field__icon {
@@ -209,6 +209,6 @@
     width: 2px;
     height: 100%;
     background-color: $basic_green;
-    left: 0;
+    left: 10px;
   }
 }

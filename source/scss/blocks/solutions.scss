@@ -10,14 +10,14 @@
 }
 
 .solutions__tip {
-  padding: 0 41px;
+  padding: 0 51px;
 
   @include tabletWidth {
-    padding-left: 67px;
+    padding-left: 77px;
   }
 
   @include desktopWidth {
-    padding-left: 395px;
+    padding-left: 405px;
   }
 }
 
