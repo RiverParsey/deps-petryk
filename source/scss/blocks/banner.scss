@@ -18,8 +18,22 @@
   }
 }
 
+.banner__wrapper {
+
+  @include tabletWidth {
+    justify-content: space-around;
+  }
+}
+
+.banner-wrap {
+
+  @include tabletWidth {
+    flex-basis: 500px;
+  }
+}
+
 .banner__title {
-  max-width: 80%;
+  min-width: 80%;
   @include extra_largeFont;
   margin: 15px 0;
 
@@ -27,6 +41,7 @@
     max-width: 45%;
     @include sizeSetter(60px, 72px);
     margin: 20px 0;
+    /* flex-grow: 1; */
   }
 }
 
@@ -42,9 +57,10 @@
   border-radius: 6px;
 
   @include tabletWidth {
-    width: 380px;
+    min-width: 380px;
     @include sizeSetter(30px, 32px);
     margin-bottom: 50px;
+    /* flex-grow: 1; */
   }
 
   @include desktopWidth {
@@ -59,6 +75,7 @@
 
   @include tabletWidth {
     column-gap: 40px;
+    /* flex-grow: 1; */
   }
 }
 
@@ -66,7 +83,8 @@
   @include mainSizes(104px, auto);
 
   @include tabletWidth {
-    @include mainSizes(140px, auto);
+    flex-basis: 140px;
+    height: auto;
   }
 
   @include desktopWidth {
@@ -143,7 +161,7 @@
     border-radius: 0px 0px 0px 30px;
     position: absolute;
     top: 0;
-    left: 522px;
+    left: 45%;
     z-index: -1000;
   }
 

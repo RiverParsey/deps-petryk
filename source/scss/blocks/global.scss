@@ -53,6 +53,15 @@ ol {
   border-radius: 6px;
   background-color: $basic_green;
   color: $basic_white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @include tabletWidth {
     padding: 17px 30px;

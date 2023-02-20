@@ -16,6 +16,7 @@
 .benefits__list {
   @include rowFlex;
   gap: 16px;
+  justify-content: center;
 
   @include tabletWidth {
     justify-content: space-between;

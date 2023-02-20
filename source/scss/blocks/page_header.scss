@@ -15,6 +15,13 @@
   box-shadow: $header_shadow;
 }
 
+.page-header__logo {
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .main-nav__toggle {
   width: 24px;
   height: 24px;
@@ -53,6 +60,10 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
@@ -142,6 +153,13 @@
   }
 }
 
+.tablet-desktop__logo {
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .tablet-desktop__image {
 
   @include desktopWidth {
@@ -163,5 +181,9 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
